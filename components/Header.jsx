@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { motion } from "framer-motion";
+
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
@@ -18,7 +20,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
-            <Button>Lets Connect</Button>
+            <Button className="rounded-lg">Lets Connect</Button>
           </Link>
         </div>
 

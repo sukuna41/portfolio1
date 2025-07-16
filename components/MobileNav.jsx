@@ -11,16 +11,16 @@ const links = [
   },
   {
     name: "about",
-    path: "/services",
+    path: "/about",
   },
   {
-    name: "certificate",
+    name: "resume",
     path: "/resume",
   },
-  {
-    name: "portfolio",
-    path: "/work",
-  },
+  // {
+  //   name: "portfolio",
+  //   path: "/work",
+  // },
   {
     name: "contact",
     path: "/contact",

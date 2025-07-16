@@ -3,11 +3,16 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
+import { motion } from "framer-motion";
+import { Contact, Phone } from "lucide-react";
+
+// Di dalam komponen Home:
+
 const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* Text Content */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             {/* Badge/Title */}
@@ -21,7 +26,7 @@ const Home = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-[600px]">
               Lulusan Teknik Informatika Universitas Kuningan dengan kepribadian
               yang teliti, sistematis, dan berorientasi detail.
             </p>
@@ -31,16 +36,17 @@ const Home = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="uppercase flex items-center gap-2 px-8 py-6 text-base"
+                // Style="border border-primary text-primary text-accent hover:bg-primary hover:text-accent"
+                className="rounded-lg uppercase flex items-center gap-2 px-8 py-6 text-base"
               >
-                <FiDownload className="text-xl" />
-                <span>Download CV</span>
+                <Phone className="text-xl" />
+                <span>Contact Saya</span>
               </Button>
 
               <div className="flex gap-4">
                 <Social
                   containerStyle="flex gap-6"
-                  iconStyle="w-9 h-9 border bordr-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                  iconStyle="w-14 h-14 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
                 />
               </div>
             </div>

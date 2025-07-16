@@ -4,26 +4,31 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay: 0.5, // Delay untuk sinkronisasi
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1], // Kurva easing premium
+        },
+      }}
+      className="relative w-[380px] h-[420px] lg:mr-12"
+    >
+      <Image
+        src="/assets/webporto.png"
+        alt="Gilang Ramadhan"
+        fill
+        className="object-cover rounded-lg shadow-xl"
+        priority
+        quality={100}
+        style={{
+          objectPosition: "top center",
         }}
       />
-      <div className="w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] mix-blend-lighten">
-        <Image
-          src="/assets/webprofil.png" // Path langsung dari public/
-          alt="Profil Gilang Ramadhan"
-          fill // Mengisi container parent
-          className="object-contain"
-          priority // Prioritaskan loading
-          quality={100}
-          sizes="(max-width: 768px) 100vw, 50vw" // Optimasi responsive
-        />
-      </div>
-    </div>
+    </motion.div>
   );
 };
 
