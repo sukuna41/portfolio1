@@ -5,17 +5,18 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 const Home = () => {
   return (
-    <section className="min-h-screen py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+    <section className="h-full">
+      <div className="container mx-auto h-full">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* Text Content */}
-          <div className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0 ">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             {/* Badge/Title */}
-            <span className="">Seorang Sarjana Teknik Informatika</span>
-
+            <span className="text-2xl text-accent">[</span>
+            <span className="text-2xl">Hello There</span>
+            <span className="text-2xl text-accent">]</span>
             {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 mt-4">
-              Hallo Saya <br />
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 mt-2">
+              Saya adalah <br />
               <span className="text-accent">Gilang Ramadhan</span>
             </h1>
 
@@ -46,7 +47,7 @@ const Home = () => {
           </div>
 
           {/* Photo */}
-          <div className="relative w-full max-w-md aspect-square lg:flex-1">
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
         </div>
