@@ -1,35 +1,21 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import CardProject from "../../components/CardProject";
-
+// components/ProjectsSection.jsx
+import ProjectCard from "./ProjectCard";
+import projects from "../../../data/dataProjects";
 export default function ProjectsSection() {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch("/api/projects");
-        const data = await response.json();
-        setProjects(data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
-  if (loading) return <div>Loading projects...</div>;
-
+  if (!projects || !Array.isArray(projects)) {
+    return (
+      <div className="py-12">
+        <p>Projects data not available</p>
+      </div>
+    );
+  }
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      {projects.map((project) => (
-        <CardProject key={project.id} {...project} />
-      ))}
-    </div>
+    <section className="">
+      <div className="grid grid-cols-3 md:grid-cols-3 p-2 rounded-lg gap-4">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
   );
 }

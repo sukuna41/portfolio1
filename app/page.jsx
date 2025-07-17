@@ -37,7 +37,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 // Style="border border-primary text-primary text-accent hover:bg-primary hover:text-accent"
-                className="rounded-lg uppercase flex items-center gap-2 px-8 py-6 text-base"
+                className="rounded-lg uppercase flex items-center gap-2 px-8 py-6 text-base data-[state=active]:bg-accent data-[state=active]:text-primary "
               >
                 <Phone className="text-xl" />
                 <span>Contact Saya</span>
