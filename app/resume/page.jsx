@@ -1,11 +1,11 @@
 "use client";
 import { supabase } from "@/lib/supabase";
 
-import { projects } from "../../data/dataProjects";
+import { projects } from "./data/dataProjects";
 
 import ProjectsSection from "./components/ProjectsSection";
 import CertificatesSection from "./components/CertificatesSection";
-import TechStackSection from "./components/TechStackSection";
+// import TechStackSection from "./techspck/TechStackSection";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FiCode, FiAward, FiBox } from "react-icons/fi";
 import { useState } from "react";
@@ -61,8 +61,8 @@ export default function Resume() {
         {/* Konten Utama - Tanpa Header Tambahan */}
         <div className="mt-6">
           {activeTab === "projects" && <ProjectsSection />}
-          {/* {activeTab === "certificates" && <CertificatesSection />}
-          {activeTab === "techstack" && <TechStackSection />} */}
+          {activeTab === "certificates" && <CertificatesSection />}
+          {/* {activeTab === "techstack" && <TechStackSection />} */}
         </div>
       </div>
     </div>

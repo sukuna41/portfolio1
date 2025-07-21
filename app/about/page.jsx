@@ -36,7 +36,7 @@ const About = () => {
       {/* Content Grid */}
       <div className="container mx-auto h-full flex flex-col lg:flex-row gap-18 items-center">
         {/* Text Content */}
-        <div className="lg:w-3/4 ">
+        <div className="lg:w-3/4">
           <h1 className="text-4xl font-semibold">
             <span className="text-accent">[</span>About
             <span className="text-accent">]</span>Me

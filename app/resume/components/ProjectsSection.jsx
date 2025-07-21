@@ -1,6 +1,6 @@
 // components/ProjectsSection.jsx
 import ProjectCard from "./ProjectCard";
-import projects from "../../../data/dataProjects";
+import projects from "../data/dataProjects";
 export default function ProjectsSection() {
   if (!projects || !Array.isArray(projects)) {
     return (
@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   }
   return (
     <section className="">
-      <div className="grid grid-cols-3 md:grid-cols-3 p-2 rounded-lg gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 p-2 lg:grid-cols-3 rounded-lg gap-4">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

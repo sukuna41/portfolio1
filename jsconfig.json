@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@data/*": ["./data/*"]
+      "@data/*": ["app/resume/data/*"]
     }
   }
 }
