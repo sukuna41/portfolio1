@@ -2,7 +2,7 @@ export const certificates = [
   {
     id: 1,
     name: "Belajar Sketch Up",
-    image_url: "/image/certificates/desain2d.jpg",
+    image_url: "/image/certificates/desain3d.jpg",
     issued_date: "2023-08-20",
   },
   {
@@ -14,8 +14,7 @@ export const certificates = [
   {
     id: 3,
     name: "Software Engineering Pemula",
-    image_url: "/image/certificates/softwareengineering.jpg",
+    image_url: "/image/certificates/softwareengineer.jpg",
     issued_date: "2023-10-15",
   },
 ];
-export default certificates;

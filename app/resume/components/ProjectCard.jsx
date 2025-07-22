@@ -7,7 +7,7 @@ export default function ProjectCard({ project }) {
   const [showFullDesc, setShowFullDesc] = useState(false);
 
   return (
-    <div className="border rounded-lg p-4 shadow-md border-accent hover:shadow-lg transition-shadow">
+    <div className="border rounded-lg p-4 shadow-md border-accent hover:shadow-lg object-cover hover:scale-105 transition-transform duration-300">
       <div className="relative h-48 w-full mb-4">
         <Image
           src={project.image}

@@ -24,3 +24,38 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Dot Grid Styles */
+.dot-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 0;
+}
+
+/* Untuk efek interaktif */
+.dot {
+  transition: all 0.3s ease;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+/* Efek gradien teks */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

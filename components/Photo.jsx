@@ -15,17 +15,17 @@ const Photo = () => {
           ease: [0.22, 1, 0.36, 1], // Kurva easing premium
         },
       }}
-      className="relative w-[380px] h-[420px] lg:mr-12"
+      className="relative w-full max-w-[380px] h-[420px] xl:max-w-[480px] xl:h-[520px] mx-auto xl:mx-0 mt-6 xl:mt-4 xl:ml-8"
     >
       <Image
-        src="/assets/webporto.png"
+        src="/image/webporto.png"
         alt="Gilang Ramadhan"
         fill
         className="object-cover rounded-lg shadow-xl"
         priority
         quality={100}
         style={{
-          objectPosition: "top center",
+          objectPosition: "center",
         }}
       />
     </motion.div>

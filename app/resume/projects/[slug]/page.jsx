@@ -1,6 +1,6 @@
 // app/resume/projects/[slug]/page.jsx
 import { notFound } from "next/navigation";
-import { ArrowLeft, Github, Code2, Star, ChevronRight } from "lucide-react";
+import { ArrowLeft, Code2, Star, ChevronRight } from "lucide-react";
 import { projects } from "@/app/resume/data/dataProjects";
 import Image from "next/image";
 import Link from "next/link";

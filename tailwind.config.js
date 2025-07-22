@@ -19,6 +19,9 @@ module.exports = {
     },
     fontFamily: {
       primary: "var(--font-jetbrainsMono)",
+      secondary: {
+        src: "/fonts/SAOUITT-Regular",
+      },
     },
     extend: {
       colors: {
@@ -26,6 +29,13 @@ module.exports = {
         accent: {
           DEFAULT: "#00ff00",
           hover: "#00e187",
+          sao: "#fefefe",
+          neon: "#00eaff",
+          cyan: "#00c2c7",
+          emerald: "#00ff90",
+          danger: "#ff3c3c",
+          ungu: "#6c63ff",
+          baja: "#cfd8dc",
         },
       },
 

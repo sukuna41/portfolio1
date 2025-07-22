@@ -17,10 +17,6 @@ const links = [
     name: "resume",
     path: "/resume",
   },
-  // {
-  //   name: "portfolio",
-  //   path: "/work",
-  // },
   {
     name: "contact",
     path: "/contact",
@@ -35,7 +31,7 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-28 mb-32 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
               Gilang<span className="text-accent">[</span>Void
@@ -43,7 +39,7 @@ const MobileNav = () => {
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col justify-center items-center gap-4">
           {links.map((links, index) => {
             return (
               <Link

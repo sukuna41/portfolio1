@@ -6,6 +6,7 @@ import { projects } from "./data/dataProjects";
 import ProjectsSection from "./components/ProjectsSection";
 import CertificatesSection from "./components/CertificatesSection";
 // import TechStackSection from "./techspck/TechStackSection";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FiCode, FiAward, FiBox } from "react-icons/fi";
 import { useState } from "react";
