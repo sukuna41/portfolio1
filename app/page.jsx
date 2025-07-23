@@ -39,14 +39,14 @@ const Home = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight">
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></span>
-                <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
+                <span className="relative text-shadow-lg bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
                   Gilang
                 </span>
               </span>
               <br />
               <span className="relative inline-block mt-2">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent-baja to-accent/80 blur-2xl opacity-20"></span>
-                <span className="relative bg-gradient-to-r from-accent-hover to-accent bg-clip-text text-transparent">
+                <span className="relative text-shadow-lg bg-gradient-to-t from-accent via-accent to-accent-baja/80 bg-clip-text text-transparent">
                   Ramadhan
                 </span>
               </span>
@@ -65,28 +65,23 @@ const Home = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
-              <div className="relative inline-block">
-                <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></div>
-                <div className="relative">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="h-12 rounded-lg uppercase flex items-center gap-2 px-8 py-6 text-base data-[state=active]:bg-accent data-[state=active]:text-primary"
-                  >
-                    <Phone className="text-xl" />
-                    <span>Contact</span>
-                  </Button>
-                </div>
+              <div className="relative group/button:">
+                <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-70 group-hover/button:opacity-60 transition-opacity duration-500"></div>
+                <Button
+                  variant="outline"
+                  className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent-baja hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300"
+                >
+                  <Phone className="text-lg" />
+                  <span>Contact</span>
+                </Button>
               </div>
 
-              <div className="relative inline-block">
-                <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></div>
-                <div className="relative">
-                  <Social
-                    containerStyle="flex gap-2"
-                    iconStyle="w-12 h-12 border border-accent rounded-lg flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
-                  />
-                </div>
+              <div className="relative group/button">
+                <div className="absolute -inset-2 bg-gradient-to-tr from-accent to-accent-baja blur-2xl opacity-20"></div>
+                <Social
+                  containerStyle="flex gap-2"
+                  iconStyle="relative w-12 h-12 rounded-lg flex justify-center items-center bg-gradient-to-t from-accent to-accent-baja hover:bg-accent text-primary hover:text-primary  border border-accent/30 hover:border-primary/50 transition-all duration-300"
+                />
               </div>
             </div>
           </div>

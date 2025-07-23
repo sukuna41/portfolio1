@@ -15,16 +15,10 @@ export default function Resume() {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
-    <div className="md:px-[10%] px-[5%] w-full bg-primary">
-      <div className="container mx-auto h-full">
+    <div className="px-24 py-2 w-full bg-primary">
+      <div className="mx-auto h-full">
         {/* Header Utama */}
-        <div className="text-center xl:text-left pb-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            <span className="text-accent">[</span>
-            Resume Saya
-            <span className="text-accent">]</span>
-          </h2>
-        </div>
+        {/* // tidak menggunakan header */}
 
         {/* Tab Navigation */}
         <Tabs

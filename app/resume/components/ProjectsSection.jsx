@@ -10,8 +10,8 @@ export default function ProjectsSection() {
     );
   }
   return (
-    <section className="">
-      <div className="grid grid-cols-1 md:grid-cols-1 p-2 lg:grid-cols-3 rounded-lg gap-4">
+    <section className="relative">
+      <div className="grid grid-cols-1 md:grid-cols-1 p-2 lg:grid-cols-3 rounded-lg gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

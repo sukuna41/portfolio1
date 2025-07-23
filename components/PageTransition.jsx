@@ -13,15 +13,15 @@ const PageTransition = ({ children }) => {
         animate={{
           opacity: 1,
           transition: {
-            delay: "1",
-            duration: 0.3,
+            delay: "0",
+            duration: 0.4,
             ease: "easeInOut",
           },
         }}
         exit={{
           opacity: 0,
           transition: {
-            duration: 0.6,
+            duration: 0.4,
             ease: "easeInOut",
           },
         }}
