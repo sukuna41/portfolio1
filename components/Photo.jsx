@@ -18,7 +18,7 @@ const Photo = () => {
       className="relative w-full max-w-[380px] h-[420px] xl:max-w-[480px] xl:h-[520px] mx-auto xl:mx-0 mt-6 xl:mt-4 xl:ml-8"
     >
       <Image
-        src="/image/webporto.png"
+        src="/image/webporto1.png"
         alt="Gilang Ramadhan"
         fill
         className="object-cover rounded-lg shadow-xl"

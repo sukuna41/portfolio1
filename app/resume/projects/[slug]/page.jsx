@@ -1,7 +1,8 @@
 // app/resume/projects/[slug]/page.jsx
 import { notFound } from "next/navigation";
-import { ArrowLeft, Code2, Star, ChevronRight } from "lucide-react";
+import { ArrowLeft, Code2, Star, SquareChevronRight } from "lucide-react";
 import { projects } from "@/app/resume/data/dataProjects";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,21 +12,22 @@ const ProjectDetail = ({ params }) => {
   if (!project) return notFound();
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-accent-baja to-accent-baja/70 py-10">
+      <div className="px-24 flex flex-col">
         {/* Back Button and Breadcrumb */}
-        <div className="flex items-center gap-4 mb-6">
-          <Link
-            href="/resume"
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            <span>Back</span>
-          </Link>
+        <div className="flex flex-row gap-4 mb-6">
+          <Button className="rounded-lg bg-gradient-to-r from-accent to-accent/50">
+            <Link
+              href="/resume"
+              className="flex items-center gap-2 text-primary hover:text-primary transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span>Back</span>
+            </Link>
+          </Button>
           <div className="flex items-center gap-2 text-sm text-gray-500">
-            <span>Projects</span>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-gray-700 font-medium">{project.title}</span>
+            <SquareChevronRight className="w-6 h-6 text-primary/60" />
+            <span className="text-primary font-medium">{project.title}</span>
           </div>
         </div>
 
@@ -34,7 +36,7 @@ const ProjectDetail = ({ params }) => {
           {/* Left Column */}
           <div className="space-y-6 ">
             <div>
-              <h1 className="text-4xl font-semibold text-primary mb-2">
+              <h1 className="text-5xl font-semibold text-primary mb-2">
                 {project.title}
               </h1>
               <p className="text-gray-700 text text-justify mt-4">
@@ -42,17 +44,17 @@ const ProjectDetail = ({ params }) => {
               </p>
             </div>
             {/* Feature */}
-            <div className="bg-white p-6 rounded-xl shadow border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-                <div className="p-2 rounded-full bg-accent">
-                  <Star className="w-5 h-5 text-primary" />
-                </div>
+            <div className="bg-white py-6 px-10 rounded-xl shadow border border-gray-200">
+              <h3 className="text-3xl font-semibold text-gray-900 flex items-center gap-2">
                 Features Utama
               </h3>
-              <ul className="space-y-1 mt-4">
+              <ul className="space-y-2 mt-4">
                 {project.features?.map((feature, index) => (
-                  <li key={index} className="ml-8 flex items-start gap-3">
-                    <span className="text-gray-700">{feature}</span>
+                  <li key={index} className="flex items-center gap-2">
+                    <div className="p-2 rounded-full bg-accent">
+                      <Star className="w-5 h-5 text-primary" />
+                    </div>
+                    <span className="text-gray-700 text-xl">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -60,7 +62,7 @@ const ProjectDetail = ({ params }) => {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-6 mt-14">
+          <div className="space-y-6">
             {/* Project Image */}
             <div className="relative rounded-xl overflow-hidden border border-gray-200 shadow-lg">
               <Image
