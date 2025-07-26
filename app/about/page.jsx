@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <span className="relative inline-block mt-2">
               <span className="absolute -inset-2 bg-gradient-to-r from-accent-baja to-accent/80 blur-2xl opacity-20"></span>
-              <span className="relative bg-gradient-to-r from-accent-hover to-accent bg-clip-text text-transparent">
+              <span className="relative bg-gradient-to-r from-accent to-accent/60 bg-clip-text text-transparent">
                 Me
               </span>
             </span>
@@ -68,12 +68,12 @@ const About = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <div className="relative group/button">
               <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-2xl opacity-30 transition-opacity duration-500"></div>
               <Button
                 variant="outline"
-                className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-tr from-accent/60 to-accent-baja hover:bg-accent text-primary hover:scale-y-110 hover:border-primary/50 transition-all duration-300"
+                className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
               >
                 <Code className="text-md" />
                 <span className="font-normal">Project</span>
@@ -84,7 +84,7 @@ const About = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-tl from-accent/60 to-accent-baja hover:bg-accent text-primary hover:scale-y-110 hover:border-primary/50 transition-all duration-300"
+                className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
               >
                 <FiDownload className="text-xl" />
                 <span className="font-normal">Download CV</span>

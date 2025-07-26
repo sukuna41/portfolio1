@@ -15,11 +15,8 @@ export default function Resume() {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
-    <div className="px-24 py-2 w-full bg-primary">
-      <div className="mx-auto h-full">
-        {/* Header Utama */}
-        {/* // tidak menggunakan header */}
-
+    <section className="h-full relative">
+      <div className="px-6 md:px-12 lg:px-24 py-2 w-full bg-primary mx-auto h-full">
         {/* Tab Navigation */}
         <Tabs
           value={activeTab}
@@ -29,7 +26,7 @@ export default function Resume() {
           <TabsList className="grid grid-cols-3 bg-primary-foreground/10 backdrop-blur-sm p-1 rounded-lg gap-4">
             <TabsTrigger
               value="projects"
-              className="data-[state=active]:bg-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent/20"
+              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-gradient-to-t from-accent to-accent/60"
             >
               <FiCode className="text-lg" />
               <span>Projects</span>
@@ -37,7 +34,7 @@ export default function Resume() {
 
             <TabsTrigger
               value="certificates"
-              className="data-[state=active]:bg-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent/20"
+              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-white h-12 hover:border border-accent"
             >
               <FiAward className="text-lg" />
               <span>Certificates</span>
@@ -45,10 +42,10 @@ export default function Resume() {
 
             <TabsTrigger
               value="techstack"
-              className="data-[state=active]:bg-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent/20"
+              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-gradient-to-t from-accent to-accent/60"
             >
               <FiBox className="text-lg" />
-              <span>Tech Stack</span>
+              <span>Skills</span>
             </TabsTrigger>
           </TabsList>
         </Tabs>
@@ -60,6 +57,6 @@ export default function Resume() {
           {/* {activeTab === "techstack" && <TechStackSection />} */}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -46,7 +46,7 @@ const Home = () => {
               <br />
               <span className="relative inline-block mt-2">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent-baja to-accent/80 blur-2xl opacity-20"></span>
-                <span className="relative text-shadow-lg bg-gradient-to-t from-accent via-accent to-accent-baja/80 bg-clip-text text-transparent">
+                <span className="relative text-shadow-lg bg-gradient-to-t from-accent via-accent to-accent-baja/60 bg-clip-text text-transparent">
                   Ramadhan
                 </span>
               </span>
@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-70 group-hover/button:opacity-60 transition-opacity duration-500"></div>
                 <Button
                   variant="outline"
-                  className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent-baja hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300"
+                  className="relative h-10 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300"
                 >
                   <Phone className="text-lg" />
                   <span>Contact</span>
@@ -80,7 +80,7 @@ const Home = () => {
                 <div className="absolute -inset-2 bg-gradient-to-tr from-accent to-accent-baja blur-2xl opacity-20"></div>
                 <Social
                   containerStyle="flex gap-2"
-                  iconStyle="relative w-12 h-12 rounded-lg flex justify-center items-center bg-gradient-to-t from-accent to-accent-baja hover:bg-accent text-primary hover:text-primary  border border-accent/30 hover:border-primary/50 transition-all duration-300"
+                  iconStyle="relative w-12 h-12 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary  border border-accent/30 hover:border-primary/50 transition-all duration-300"
                 />
               </div>
             </div>
