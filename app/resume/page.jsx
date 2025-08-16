@@ -3,9 +3,9 @@ import { supabase } from "@/lib/supabase";
 
 import { projects } from "./data/dataProjects";
 
-import ProjectsSection from "./components/ProjectsSection";
-import CertificatesSection from "./components/CertificatesSection";
-// import TechStackSection from "./techspck/TechStackSection";
+import ProjectsSection from "./components/Projects/ProjectsSection";
+import CertificatesSection from "./components/Certificates/CertificatesSection";
+import SkillsSection from "./components/Skills/SkillsSection";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FiCode, FiAward, FiBox } from "react-icons/fi";
@@ -21,31 +21,31 @@ export default function Resume() {
         <Tabs
           value={activeTab}
           onValueChange={setActiveTab}
-          className="mb-8" // Margin bottom diperkecil
+          className="border border-accent/70 h-20 rounded-lg px-2 py-3"
         >
           <TabsList className="grid grid-cols-3 bg-primary-foreground/10 backdrop-blur-sm p-1 rounded-lg gap-4">
             <TabsTrigger
               value="projects"
-              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-gradient-to-t from-accent to-accent/60"
+              className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiCode className="text-lg" />
-              <span>Projects</span>
+              <FiCode className="text-2xl" />
+              <span className="text-lg">Projects</span>
             </TabsTrigger>
 
             <TabsTrigger
               value="certificates"
-              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-white h-12 hover:border border-accent"
+              className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiAward className="text-lg" />
-              <span>Certificates</span>
+              <FiAward className="text-2xl" />
+              <span className="text-lg">Certificates</span>
             </TabsTrigger>
 
             <TabsTrigger
-              value="techstack"
-              className="data-[state=active]:bg-gradient-to-t from-accent to-accent/60 data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-gradient-to-t from-accent to-accent/60"
+              value="skills"
+              className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiBox className="text-lg" />
-              <span>Skills</span>
+              <FiBox className="text-2xl" />
+              <span className="text-lg">Skills</span>
             </TabsTrigger>
           </TabsList>
         </Tabs>
@@ -54,7 +54,7 @@ export default function Resume() {
         <div className="mt-6">
           {activeTab === "projects" && <ProjectsSection />}
           {activeTab === "certificates" && <CertificatesSection />}
-          {/* {activeTab === "techstack" && <TechStackSection />} */}
+          {activeTab === "skills" && <SkillsSection />}
         </div>
       </div>
     </section>

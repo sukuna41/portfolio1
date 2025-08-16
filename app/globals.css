@@ -60,3 +60,10 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+@layer components {
+  .radix-dialog-content {
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}

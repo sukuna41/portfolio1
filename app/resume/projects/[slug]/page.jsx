@@ -46,7 +46,7 @@ const ProjectDetail = ({ params }) => {
             {/* Feature */}
             <div className="bg-gradient-to-br from-primary to-primary/90 pt-6 pb-8 px-10 rounded-xl shadow border border-primary/40">
               <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
-                Features Utama
+                Features
               </h3>
               <ul className="space-y-2 mt-4">
                 {project.features?.map((feature, index) => (

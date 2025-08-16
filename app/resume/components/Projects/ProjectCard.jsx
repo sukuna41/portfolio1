@@ -45,9 +45,14 @@ export default function ProjectCard({ project }) {
             <Button
               asChild
               variant="outline"
-              className="relative px-4 py-2 rounded-lg bg-accent/0 hover:bg-accent text-accent border-accent/30 hover:border-primary/50 transition-all duration-300"
+              className="relative px-4 py-2 rounded-lg bg-accent/0 hover:bg-accent text-accent border-accent/30 hover:border-primary/50 hover:font-semibold transition-all duration-300"
             >
-              <Link href={`/resume/projects/${project.slug}`}>Details</Link>
+              <Link
+                className="font-extralight"
+                href={`/resume/projects/${project.slug}`}
+              >
+                Details
+              </Link>
             </Button>
           </div>
         </div>

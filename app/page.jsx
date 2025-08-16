@@ -5,10 +5,9 @@ import TextRotator from "@/components/TextRotator";
 import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
-  "Frontend Developer",
-  "UI/UX Designer",
-  "Website Developer",
-  "Mobile App Developer",
+  "IT Office Administartion",
+  "IT Support",
+  "Junior Web Developer",
 ];
 
 const Home = () => {
@@ -19,21 +18,6 @@ const Home = () => {
         {/* Left Column - Text Content */}
         <div className="w-full xl:w-1/2 order-2 xl:order-1 py-8 xl:py-2">
           {/* Badge/Title */}
-          <div
-            className="inline-block animate-float"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div className="relative group">
-              <div className="absolute -inset-0.5 bg-accent rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-              <div className="relative px-3 sm:px-4 py-2 rounded-lg bg-black/40 backdrop-blur-xl border border-white/10">
-                <span className="text-2xl bg-accent text-white bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
-                  Levels Just a Numbers
-                </span>
-              </div>
-            </div>
-          </div>
-
           {/* Main Heading */}
           <div className="mt-6 xl:mt-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight">
@@ -59,8 +43,9 @@ const Home = () => {
 
             {/* Description */}
             <p className="text-lg text-muted-foreground leading-relaxed my-4 max-w-[700px]">
-              Lulusan Teknik Informatika dengan pengalaman di organisasi kampus
-              dan industri, teliti, sistematis, serta berorientasi pada detail.
+              A graduate of Computer Science with experience in campus
+              organizations and industry, meticulous, systematic, and
+              detail-oriented.
             </p>
 
             {/* Action Buttons */}

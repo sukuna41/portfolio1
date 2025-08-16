@@ -1,6 +1,5 @@
 export const WORDS = [
-  "Frontend Developer",
-  "UI/UX Designer",
-  "Website Developer",
-  "Mobile App Developer",
+  "IT Office Addministration",
+  "IT Support",
+  "IT Junior Programer",
 ];
