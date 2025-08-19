@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@data/*": ["app/resume/data/*"]
+      "@data/*": ["app/resume/data/*"],
+      "@/components/*": ["./components/*"],
+      "@/app/*": ["./app/*"]
     }
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }
