@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: true, // ◀── Recomended untuk GitHub Pages
+  output: "export",
+  trailingSlash: true,
   images: {
-    unoptimized: true, // ◀── Jika menggunakan next/image
+    unoptimized: true,
   },
-  reactStrictMode: false, // WAJIB untuk animasi
-  // swcMinify: false, // Nonaktifkan SWC
-  // experimental: {
-  //   optimizePackageImports: ["framer-motion"],
-  //   serverActions: true,
-  // },
+  // HAPUS experimental.serverActions dan swcMinify
 };
 
 export default nextConfig;
