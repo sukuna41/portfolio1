@@ -42,7 +42,7 @@ const Home = () => {
             </div>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed my-4 max-w-[700px]">
+            <p className="text-lg text-muted-foreground leading-relaxed my-4">
               A graduate of Computer Science with experience in campus
               organizations and industry, meticulous, systematic, and
               detail-oriented.

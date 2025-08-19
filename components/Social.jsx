@@ -2,10 +2,13 @@ import { Item } from "@radix-ui/react-select";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedinIn />, path: "" },
-  { icon: <FaInstagram />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/sukuna41/" },
+  {
+    icon: <FaLinkedinIn />,
+    path: "https://www.linkedin.com/in/gilang-ramadhan41/",
+  },
+  { icon: <FaInstagram />, path: "https://www.instagram.com/r_gilang.pdf/" },
+  { icon: <FaTwitter />, path: "https://x.com/Genomic41" },
 ];
 
 const Social = ({ containerStyle, iconStyle }) => {

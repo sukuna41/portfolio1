@@ -15,14 +15,13 @@ const Photo = () => {
           ease: [0.22, 1, 0.36, 1], // Kurva easing premium
         },
       }}
-      className="relative w-full max-w-[380px] h-[420px] xl:max-w-[480px] xl:h-[520px] mx-auto xl:mx-0 mt-6 xl:mt-4 xl:ml-8"
+      className="relative w-full max-w-[480px] h-[420px] xl:max-w-[512] xl:h-[520px] mx-auto xl:mx-0 mt-6 xl:mt-6 border border-accent"
     >
       <Image
-        src="/image/webporto1.png"
+        src="/image/profile.png"
         alt="Gilang Ramadhan"
         fill
-        className="object-cover rounded-lg shadow-xl"
-        priority
+        className="object-cover"
         quality={100}
         style={{
           objectPosition: "center",
