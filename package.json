@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postbuild": "echo 'Build completed successfully'"
+    "postbuild": "cp out/index.html out/404.html && touch out/.nojekyll"
   },
   "homepage": "https://sukuna41.github.io/portfolio1-gilang.github.io",
   "dependencies": {
