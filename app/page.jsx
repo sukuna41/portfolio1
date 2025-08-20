@@ -14,13 +14,13 @@ const Home = () => {
   return (
     <section className="h-full relative">
       {/* Main Container - using flex for two-column layout */}
-      <div className="px-10 md:px-12 lg:px-24 h-full bg-primary relative z-10 flex flex-col xl:flex-row gap-8 xl:gap-14 items-center">
+      <div className="px-10 md:px-12 lg:px-24 mb-20 xl:mb-0 lg:mb-0 md:mb-0 relative h-full bg-primary  z-10 flex flex-col xl:flex-row gap-8 xl:gap-14 items-center">
         {/* Left Column - Text Content */}
         <div className="w-full xl:w-1/2 order-2 xl:order-1 xl:py-2">
           {/* Badge/Title */}
           {/* Main Heading */}
-          <div className="relative xl:mt-6">
-            <h1 className="text-8xl xl:text-8xl lg:text-7xl md:text-4xl sm:text-4xl xs:text-2xl font-bold tracking-tight">
+          <div className="relative xl:mt-6 ">
+            <h1 className="text-6xl xl:text-8xl lg:text-8xl md:text-8xl sm:text-6xl  font-bold tracking-tight">
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></span>
                 <span className="relative text-shadow-lg bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -74,8 +74,8 @@ const Home = () => {
         </div>
 
         {/* Right Column - Photo */}
-        <div className="w-full xl:w-1/2 order-1 xl:order-2 flex justify-center items-center">
-          <div className="relative w-full max-w-md xl:max-w-lg">
+        <div className="w-full xl:w-1/2 order-1 xl:order-2 flex justify-center  items-center">
+          <div className="relative flex xl:flex w-full max-w-md xl:max-w-lg md:hidden">
             <Photo />
           </div>
         </div>

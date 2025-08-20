@@ -10,18 +10,17 @@ const ProjectDetailClient = ({ project }) => {
     <div className="min-h-screen bg-gradient-to-br from-accent-baja to-accent-baja/70 py-10">
       <div className="px-6 md:px-12 lg:px-24 flex flex-col">
         {/* Back Button and Breadcrumb */}
-        <div className="flex flex-row gap-4 mb-6">
+        <div className="flex flex-row gap-2 mb-6">
           <Button className="rounded-lg hover:bg-white bg-gradient-to-r from-primary to-primary/80">
             <Link
               href="/resume"
               className="flex items-center gap-2 text-white hover:text-white transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
-              <span>Back</span>
+              <span className="sm:flex hidden">Back</span>
             </Link>
           </Button>
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <SquareChevronRight className="w-6 h-6 text-primary/60" />
+          <div className="flex items-center gap-2 text-2xl text-gray-500">
             <span className="text-primary font-medium">{project.title}</span>
           </div>
         </div>
@@ -31,7 +30,7 @@ const ProjectDetailClient = ({ project }) => {
           {/* Left Column */}
           <div className="space-y-6">
             <div>
-              <h1 className="text-5xl font-semibold text-primary mb-2">
+              <h1 className="text-3xl font-semibold text-primary mb-2">
                 {project.title}
               </h1>
               <p className="text-gray-700 text text-justify mt-4">

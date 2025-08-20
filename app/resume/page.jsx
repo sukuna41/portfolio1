@@ -16,7 +16,7 @@ export default function Resume() {
 
   return (
     <section className="h-full relative">
-      <div className="px-6 md:px-12 lg:px-24 py-2 w-full bg-primary mx-auto h-full">
+      <div className="px-10 md:px-12 lg:px-24 py-2 w-full bg-primary mx-auto h-full">
         {/* Tab Navigation */}
         <Tabs
           value={activeTab}
@@ -28,24 +28,30 @@ export default function Resume() {
               value="projects"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiCode className="text-2xl" />
-              <span className="text-lg">Projects</span>
+              <FiCode className="sm:hidden text-3xl" />
+              <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
+                Projects
+              </span>
             </TabsTrigger>
 
             <TabsTrigger
               value="certificates"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiAward className="text-2xl" />
-              <span className="text-lg">Certificates</span>
+              <FiAward className="sm:hidden text-3xl" />
+              <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
+                Certificates
+              </span>
             </TabsTrigger>
 
             <TabsTrigger
               value="skills"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiBox className="text-2xl" />
-              <span className="text-lg">Skills</span>
+              <FiBox className="sm:hidden text-3xl" />
+              <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
+                Skills
+              </span>
             </TabsTrigger>
           </TabsList>
         </Tabs>

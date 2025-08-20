@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   }
   return (
     <section className="relative">
-      <div className="pb-10 grid grid-cols-1 md:grid-cols-1 p-2 lg:grid-cols-3 rounded-lg gap-6">
+      <div className="pb-10 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 rounded-lg gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
