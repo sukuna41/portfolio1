@@ -52,8 +52,8 @@ const About = () => {
             <div className="relative my-4 group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-baja/40 to-accent/20 blur-3xl opacity-50"></div>
               <p className="p-4 text-md text-center rounded-lg border border-accent/60 text-white lg:text-left md:text-lg italic">
-                "Lebih baik kecewa karena mencoba daripada kecewa karena tidak
-                mencoba"
+                {""}Lebih baik kecewa karena mencoba daripada kecewa karena
+                tidak mencoba{""}
               </p>
             </div>
 
