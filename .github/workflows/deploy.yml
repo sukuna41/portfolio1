@@ -3,7 +3,7 @@ name: Deploy Next.js to GitHub Pages
 on:
   push:
     branches:
-      - main # atau 'master' kalau default branch kamu itu
+      - main # ganti kalau branch default kamu 'master'
 
 jobs:
   build:
@@ -21,14 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
-        run: npm run build
+      - name: Build and Export Next.js
+        run: |
+          npm run build
+          npm run export
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: out
-          path: out
+          path: ./out # hasil export Next.js masuk ke folder 'out'
 
   deploy:
     needs: build
@@ -38,15 +39,6 @@ jobs:
       id-token: write
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: out
-          path: ./out
-
       - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-
-      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,17 +1,11 @@
-// next.config.mjs
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-  output: "export",
-  trailingSlash: true,
-  images: { unoptimized: true },
-  ...(isProd
-    ? {
-        basePath: "/portfolio1-gilang.github.io",
-        assetPrefix: "/portfolio1-gilang.github.io/",
-      }
-    : {}),
+  output: "export", // supaya bisa jadi static export (Next.js -> HTML/CSS/JS)
+  images: {
+    unoptimized: true, // kalau ada pakai next/image
+  },
+  basePath: "/portfolio1-gilang.github.io", // sesuaikan dengan nama repository
+  assetPrefix: "/portfolio1-gilang.github.io/",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
