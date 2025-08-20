@@ -1,12 +1,11 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: "/portfolio1-gilang.github.io",
+  output: "export", // ◀── INI YANG PENTING!
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  // HAPUS experimental.serverActions dan swcMinify
 };
 
 export default nextConfig;
