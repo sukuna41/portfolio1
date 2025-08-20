@@ -62,7 +62,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="w-full relative group/button flex items-center flex-wrap justify-end sm:justify-start">
+              <div className="w-full relative group/button flex items-center flex-wrap justify-end md:justify-start">
                 <div className="absolute -inset-2 bg-gradient-to-tr from-accent to-accent-baja blur-2xl opacity-20"></div>
                 <Social
                   containerStyle="flex gap-1 justify-center items-center h-12"
