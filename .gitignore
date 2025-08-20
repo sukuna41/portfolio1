@@ -11,7 +11,26 @@
 
 # next.js
 /.next/
-/out/   # <--- SUDAH DIPERBAIKI
+
+# out/ folder - ALLOW DEPLOYMENT FILES
+out/*
+!out/.nojekyll
+!out/index.html
+!out/404.html
+!out/**/
+!out/**/*.js
+!out/**/*.css
+!out/**/*.html
+!out/**/*.json
+!out/**/*.xml
+!out/**/*.ico
+!out/**/*.svg
+!out/**/*.png
+!out/**/*.jpg
+!out/**/*.jpeg
+!out/**/*.gif
+!out/**/*.webp
+!out/**/*.map
 
 # production
 /build
