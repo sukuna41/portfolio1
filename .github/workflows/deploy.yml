@@ -29,9 +29,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Export
-        run: npm run export
-
       - name: Generate .nojekyll and 404.html
         run: |
           touch out/.nojekyll
