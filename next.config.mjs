@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // supaya bisa jadi static export (Next.js -> HTML/CSS/JS)
+  output: "export",
   images: {
-    unoptimized: true, // kalau ada pakai next/image
+    unoptimized: true,
   },
-  basePath: "/portfolio1-gilang.github.io", // sesuaikan dengan nama repository
+  basePath: "/portfolio1-gilang.github.io",
   assetPrefix: "/portfolio1-gilang.github.io/",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
