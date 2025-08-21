@@ -2,11 +2,12 @@
   "name": "web2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/portfolio1-gilang.github.io",
+  "type": "commonjs",
   "scripts": {
     "build": "next build",
     "export": "next export"
   },
+  "homepage": "https://sukuna41.github.io/portfolio1-gilang.github.io",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
