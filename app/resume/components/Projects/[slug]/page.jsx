@@ -1,4 +1,4 @@
-import { projects } from "../../data/dataProjects"; // ◀── DUA tingkat ke atas
+import { projects } from "../../data/dataProjects";
 import ProjectDetailClient from "./ProjectDetailClient";
 
 // GENERATE STATIC PARAMS - Untuk static export

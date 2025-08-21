@@ -51,7 +51,7 @@ const TextRotator = ({
 
   return (
     <div className="inline-flex items-center">
-      <span className="text-xl md:text-2xl bg-gradient-to-r  from-white via-blue-100 to-green-200 bg-clip-text text-transparent font-light">
+      <span className="text-xl md:text-3xl bg-gradient-to-r  from-white via-blue-100 to-green-200 bg-clip-text text-transparent font-light">
         {text}
       </span>
       <span className="w-[3px] h-6 bg-gradient-to-t from-accent to-accent-hover ml-1 animate-blink" />

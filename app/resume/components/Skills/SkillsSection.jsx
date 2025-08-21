@@ -37,7 +37,7 @@ export default function SkillsSection() {
         ))}
       </div>
 
-      <div className="pb-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-4 rounded-lg">
+      <div className="pb-10 grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 rounded-lg">
         {" "}
         {filteredSkills.map((skill) => (
           <SkillCard key={skill.id} skill={skill} />

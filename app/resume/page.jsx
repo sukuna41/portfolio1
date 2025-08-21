@@ -1,12 +1,8 @@
 "use client";
-import { supabase } from "@/lib/supabase";
-
-import { projects } from "./data/dataProjects";
 
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import CertificatesSection from "./components/Certificates/CertificatesSection";
 import SkillsSection from "./components/Skills/SkillsSection";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FiCode, FiAward, FiBox } from "react-icons/fi";
 import { useState } from "react";
@@ -16,7 +12,21 @@ export default function Resume() {
 
   return (
     <section className="h-full relative">
-      <div className="px-10 md:px-12 lg:px-24 py-2 w-full bg-primary mx-auto h-full">
+      <div className="px-10 my-0 sm:py-8 md:py-10 md:px-12 lg:px-24 py-2 w-full mx-auto h-full">
+        <h1 className="text-6xl py-10 lg:pt-0 md:text-4xl lg:text-8xl text-center lg:text-left font-bold tracking-tight">
+          <div className="relative inline-block">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-xl opacity-15"></div>
+            <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
+              My
+            </span>
+          </div>
+          <span className="relative inline-block mt-2">
+            <span className="absolute -inset-0.5 bg-gradient-to-r from-accent-baja to-accent/80 blur-xl opacity-15"></span>
+            <span className="relative bg-gradient-to-r from-accent to-accent/60 bg-clip-text text-transparent">
+              Portfolio
+            </span>
+          </span>
+        </h1>
         {/* Tab Navigation */}
         <Tabs
           value={activeTab}
@@ -28,7 +38,7 @@ export default function Resume() {
               value="projects"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiCode className="sm:hidden text-3xl" />
+              <FiCode className="sm:hidden text-2xl" />
               <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
                 Projects
               </span>
@@ -38,7 +48,7 @@ export default function Resume() {
               value="certificates"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiAward className="sm:hidden text-3xl" />
+              <FiAward className="sm:hidden text-2xl" />
               <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
                 Certificates
               </span>
@@ -48,7 +58,7 @@ export default function Resume() {
               value="skills"
               className="text-white data-[state=active]:bg-gradient-to-b from-accent/90 to-accent data-[state=active]:text-primary flex gap-2 hover:text-primary h-12 hover:bg-accent"
             >
-              <FiBox className="sm:hidden text-3xl" />
+              <FiBox className="sm:hidden text-2xl" />
               <span className="sm:flex hidden text-md lg:text-lg items-center text-center">
                 Skills
               </span>

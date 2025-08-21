@@ -12,14 +12,15 @@ export default function ProjectCard({ project }) {
       <div className="absolute -inset-0.5 bg-gradient-to-r from-accent/15 to-accent-baja/15 rounded-xl blur opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
 
       {/* Main Card Container */}
-      <div className="relative h-full bg-gradient-to-tr from-accent-baja/10 via-accent-baja/10 to-accent/10 bg-background border border-accent/30 rounded-lg p-4 transition-all duration-500 group-hover:border-accent/70 group-hover:shadow-lg">
+      <div className="relative h-full bg-gradient-to-tr from-accent-baja/10 via-accent-baja/10 to-accent/10 bg-background border border-accent/30 rounded-lg p-2 transition-all duration-500 group-hover:border-accent/70 group-hover:shadow-lg">
         {/* Image Container dengan Scale Effect */}
-        <div className="relative h-48 w-full mb-4 overflow-hidden rounded-lg">
+        <div className="relative justify-items-center cursor-pointer mb-4 overflow-hidden rounded-lg">
           <Image
             src={project.image}
             alt={project.title}
-            fill
-            className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-y-105"
+            width={440}
+            height={100}
+            className="object-cover rounded-lg w-100% h-100%  contrast-110 brightness-90 saturate-110 transition-filter duration-300 group-hover:scale-y-105"
           />
         </div>
         {/* Content */}
@@ -30,8 +31,8 @@ export default function ProjectCard({ project }) {
             </span>
           </h3>
 
-          <p className="text-muted-foreground my-4 leading-6 line-clamp-2 flex-grow transition-all duration-300 group-hover:text-foreground">
-            <span className="relative bg-accent-baja bg-clip-text text-transparent group-hover:text-white transition-colors duration-300">
+          <p className="text-muted-foreground my-4 leading-6 line-clamp-2 flex-grow duration-300 group-hover:text-foreground">
+            <span className="bg-accent-baja bg-clip-text text-transparent group-hover:text-white transition-colors">
               {project.description}
             </span>
           </p>

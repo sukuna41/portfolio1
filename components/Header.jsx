@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="px-8 md:px-12 lg:px-24 h-full pt-6 pb-6   text-white">
+    <header className="sticky top-0 z-50 bg-primary px-8 md:px-12 lg:px-24 py-4 text-white">
       <div className="flex justify-between items-center">
         {/* logo */}
         <Link href="/">
@@ -17,12 +17,12 @@ const Header = () => {
         </Link>
 
         {/* dekstop nav & hire me button*/}
-        <div className="hidden xl:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4">
           <Nav />
         </div>
 
         {/* mobile nav */}
-        <div className="xl:hidden">
+        <div className="md:hidden">
           <MobileNav />
         </div>
       </div>

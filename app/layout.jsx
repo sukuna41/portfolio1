@@ -1,7 +1,9 @@
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header";
+import ScrollHandler from "../components/ScrollHandler";
 import PageTransition from "@/components/PageTransition";
+import LoadingSpinner from "../components/LoadingSpinner";
 import StairTransition from "@/components/StairTransition";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -21,6 +23,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetbrainsMono.variable}>
         <Header />
+        <ScrollHandler>{children}</ScrollHandler>
+        <LoadingSpinner>{children}</LoadingSpinner>
         {/* <StairTransition /> */}
         <PageTransition>{children}</PageTransition>
       </body>

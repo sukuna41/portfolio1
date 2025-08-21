@@ -13,11 +13,12 @@
 /.next/
 
 # out/ folder - ALLOW DEPLOYMENT FILES
+# out/ folder - ALLOW DEPLOYMENT FILES
 out/*
 !out/.nojekyll
 !out/index.html
 !out/404.html
-!out/**/
+!out/_next/**  # Mengizinkan semua file di dalam _next
 !out/**/*.js
 !out/**/*.css
 !out/**/*.html
@@ -31,7 +32,6 @@ out/*
 !out/**/*.gif
 !out/**/*.webp
 !out/**/*.map
-
 # production
 /build
 

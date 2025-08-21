@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="overflow-hidden h-max bg-primary">
       {/* Content Grid - Reversed layout with About first */}
-      <div className="px-10 mb-20 xl:mb-10 md:px-12 lg:px-24  flex flex-col lg:flex-row gap-18">
+      <div className="px-10 my-10 sm:my-4 md:pb-20 md:my-2 md:px-12 lg:px-24 flex flex-col lg:flex-row gap-18">
         {/* Left - About Me (fixed height, positioned higher) */}
         <div className="lg:w-3/4 md:pr-8 lg:pt-8">
           {/* Added top padding */}
@@ -19,7 +19,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-7xl pt-10 lg:pt-0 md:text-8xl text-center lg:text-left font-bold tracking-tight">
+            <h1 className="text-7xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-center lg:text-left font-bold tracking-tight">
               <div className="relative inline-block">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-xl opacity-15"></div>
                 <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -84,7 +84,7 @@ const About = () => {
           </motion.div>
         </div>
         {/* Right - Experience (scrollable with proper visibility) */}
-        <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-6 md:mt-4 pt-6 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(100vh-2rem)] xl:h-[calc(90vh-2rem)]">
+        <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-6 md:mt-4 pt-6 lg:mt-8 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(100vh-2rem)] xl:h-[calc(80vh-2rem)]">
           {/* Header */}
           <div className="sticky top-0 pt-4 pb-6 z-10">
             <h1 className="text-5xl ml-0 lg:ml-4 text-center lg:text-left lg:text-4xl  font-bold tracking-tight">

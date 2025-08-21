@@ -1,60 +1,73 @@
 "use client";
-import { Sheet, SheetContent, SheetTrigger } from "../components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { useState } from "react";
 
 const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "about",
-    path: "/about",
-  },
-  {
-    name: "portfolio",
-    path: "/resume",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  { name: "home", path: "/", hash: "#home" },
+  { name: "about", path: "/", hash: "#about" },
+  { name: "resume", path: "/", hash: "#resume" },
+  { name: "contact", path: "/", hash: "#contact" },
 ];
+
 const MobileNav = () => {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavigation = (link) => {
+    setIsOpen(false);
+
+    if (pathname === "/") {
+      // Jika sudah di homepage, scroll ke section
+      setTimeout(() => {
+        const element = document.getElementById(link.hash.replace("#", ""));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          window.history.pushState(null, "", link.hash);
+        }
+      }, 100);
+    } else {
+      // Jika tidak di homepage, redirect ke homepage dengan hash
+      window.location.href = `/${link.hash}`;
+    }
+  };
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <CiMenuFries className="text-[22px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        {/* logo */}
-        <div className="mt-28 mb-32 text-center text-2xl">
-          <Link href="/">
+        <div className="mt-1 mb-32 text-left text-2xl">
+          <a
+            href="/#home"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation({ hash: "#home" });
+            }}
+            className="cursor-pointer"
+          >
             <h1 className="text-4xl font-semibold">
-              Gilang<span className="text-accent">[</span>Void
+              <span className="text-accent">[</span>G
               <span className="text-accent">]</span>
             </h1>
-          </Link>
+          </a>
         </div>
-        <nav className="flex sm:px-4  flex-col justify-center items-center gap-4">
-          {links.map((links, index) => {
-            return (
-              <Link
-                href={links.path}
-                key={index}
-                className={`${
-                  links.path === pathname &&
-                  "text-accent border-b-2 border-accent"
-                }
-                  text-xl capitalize hover:text-accent transition-all`}
-              >
-                {links.name}
-              </Link>
-            );
-          })}
+        <nav className="flex px-2 flex-col justify-center items-start gap-6">
+          {links.map((link, index) => (
+            <a
+              href={link.path + link.hash}
+              key={index}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavigation(link);
+              }}
+              className="text-2xl capitalize hover:text-accent transition-all cursor-pointer"
+            >
+              {link.name}
+            </a>
+          ))}
         </nav>
       </SheetContent>
     </Sheet>
