@@ -3,8 +3,9 @@ const nextConfig = {
   output: "export",
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, // Penting untuk static export
   },
   skipTrailingSlashRedirect: true,
 };
+
 module.exports = nextConfig;
