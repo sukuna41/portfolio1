@@ -1,10 +1,13 @@
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
+
 import Header from "@/components/Header";
 import ScrollHandler from "../components/ScrollHandler";
 import PageTransition from "@/components/PageTransition";
 import LoadingSpinner from "../components/LoadingSpinner";
 import StairTransition from "@/components/StairTransition";
+import GridBackground from "@/components/effects/GridBackground";
+import MovingLights from "@/components/effects/MovingLights";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -21,12 +24,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.variable}>
-        <Header />
-        <ScrollHandler>{children}</ScrollHandler>
-        <LoadingSpinner>{children}</LoadingSpinner>
-        {/* <StairTransition /> */}
-        <PageTransition>{children}</PageTransition>
+      <body className={jetbrainsMono.variable + " body-grid-background"}>
+        {/* Tambahkan light spots */}
+        <div className="light-spot light-spot-1"></div>
+        <div className="light-spot light-spot-2"></div>
+        <div className="light-spot light-spot-3"></div>
+
+        <div className="content-layer">
+          <Header />
+          <MovingLights></MovingLights>
+          <ScrollHandler>{children}</ScrollHandler>
+          <LoadingSpinner>{children}</LoadingSpinner>
+          <StairTransition>{children}</StairTransition>
+          <PageTransition>{children}</PageTransition>
+        </div>
       </body>
     </html>
   );

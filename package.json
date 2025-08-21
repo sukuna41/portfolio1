@@ -4,10 +4,8 @@
   "private": true,
   "homepage": "/portfolio1-gilang.github.io",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && npm run export-fix",
-    "export-fix": "rm -rf out && mkdir -p out && cp -r .next/static out/_next/static && cp -r public/* out/",
-    "postbuild": "cp out/index.html out/404.html || true && touch out/.nojekyll"
+    "build": "next build",
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

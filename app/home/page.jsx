@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <section className="h-full relative">
       {/* Main Container - using flex for two-column layout */}
-      <div className="px-10 md:px-12 lg:px-24 my-10 md:py-6 md:pb-14 relative h-full bg-primary  z-10 flex flex-col xl:flex-row gap-8 xl:gap-8 items-center">
+      <div className="px-10 md:px-12 lg:px-24 my-10 md:py-6 md:pb-14 relative h-full bg-transparent  z-10 flex flex-col xl:flex-row gap-8 xl:gap-8 items-center">
         {/* Left Column - Text Content */}
         <div className="w-full xl:w-1/2 order-2 xl:order-1 xl:py-2">
           {/* Badge/Title */}
@@ -52,7 +52,7 @@ const Home = () => {
             {/* Action Buttons */}
             <div className="flex flex-row max-w-full items-center gap-2 mt-8">
               <div className="relative group/button flex-wrap justify-start sm:justify-start">
-                <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-70 group-hover/button:opacity-60 transition-opacity duration-500"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-30 group-hover/button:opacity-60 transition-opacity duration-500"></div>
                 <Button
                   variant="outline"
                   className="relative h-12 sm:h-14 rounded-lg uppercase flex items-center gap-2 px-6 py-4  bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300 whitespace-nowrap text-sm sm:text-base"
@@ -62,8 +62,8 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="w-full relative group/button flex items-center flex-wrap xl:justify-start sm:justify-start">
-                <div className="absolute -inset-2 bg-gradient-to-tr from-accent to-accent-baja blur-2xl opacity-20"></div>
+              <div className="w-full xl:w-1/2 relative group/button flex items-center flex-wrap xl:justify-start sm:justify-start">
+                <div className="absolute -inset-0.5 bg-gradient-to-tr from-accent to-accent-baja blur-xl opacity-5"></div>
                 <Social
                   containerStyle="flex gap-1 justify-center items-center h-12"
                   iconStyle="relative w-12 h-12 sm:h-14 sm:w-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
