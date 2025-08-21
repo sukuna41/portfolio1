@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true, // Penting untuk static export
   },
+  // HAPUS basePath dan assetPrefix untuk repository username.github.io
+  // basePath: "/portfolio1-gilang.github.io",  // HAPUS BARIS INI
+  // assetPrefix: "/portfolio1-gilang.github.io/",  // HAPUS BARIS INI
   skipTrailingSlashRedirect: true,
 };
 

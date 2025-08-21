@@ -19,7 +19,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-7xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-center lg:text-left font-bold tracking-tight">
+            <h1 className="text-6xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-center lg:text-left font-bold tracking-tight">
               <div className="relative inline-block">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-xl opacity-15"></div>
                 <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ const About = () => {
             {/* Quote - moved up closer to text */}
             <div className="relative my-4 group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-baja/40 to-accent/20 blur-3xl opacity-50"></div>
-              <p className="p-4 text-md text-center rounded-lg border border-accent/60 text-white lg:text-left md:text-lg italic">
+              <p className="p-4 text-sm sm:text-md text-center rounded-lg border border-accent/60 text-white lg:text-left md:text-lg italic">
                 {'"'}Lebih baik kecewa karena mencoba daripada kecewa karena
                 tidak mencoba{'"'}
               </p>
@@ -63,10 +63,10 @@ const About = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-xl opacity-30 transition-opacity duration-500"></div>
                 <Button
                   variant="outline"
-                  className="relative h-10 w-48 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
+                  className="relative h-10 w-36 sm:w-fit rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
                 >
                   <Code className="text-md" />
-                  <span className="font-normal">Project</span>
+                  <span className="text-sm md:font-lg">Project</span>
                 </Button>
               </div>
               <div className="relative grup/button">
@@ -74,10 +74,10 @@ const About = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="relative h-10 w-48 rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
+                  className="relative h-10 w-36 sm:w-fit rounded-lg uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
                 >
                   <FiDownload className="text-xl" />
-                  <span className="font-normal">Download CV</span>
+                  <span className="text-sm md:font-lg">Download CV</span>
                 </Button>
               </div>
             </div>
@@ -87,7 +87,7 @@ const About = () => {
         <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-6 md:mt-4 pt-6 lg:mt-8 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(100vh-2rem)] xl:h-[calc(80vh-2rem)]">
           {/* Header */}
           <div className="sticky top-0 pt-4 pb-6 z-10">
-            <h1 className="text-5xl ml-0 lg:ml-4 text-center lg:text-left lg:text-4xl  font-bold tracking-tight">
+            <h1 className="text-4xl ml-0 lg:ml-4 text-center lg:text-left font-bold tracking-tight">
               <span className="relative bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
                 Work
               </span>
@@ -99,7 +99,7 @@ const About = () => {
           </div>
 
           {/* Scrollable Content Area */}
-          <div className="relative flex lg:overflow-y-auto h-[calc(100%-120px)] mb-10 lg:mb-0">
+          <div className="relative flex lg:overflow-y-auto h-[calc(100%-120px)]">
             <Experience />
           </div>
         </div>

@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-2xl font-semibold">
+          <h1 className="pt-4 text-3xl font-semibold">
             <span className="text-accent">[</span>Gilang
             <span className="text-accent">]</span>
           </h1>
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="md:hidden">
+        <div className="pt-4 md:hidden">
           <MobileNav />
         </div>
       </div>

@@ -15,7 +15,7 @@ const Photo = () => {
           ease: [0.22, 1, 0.36, 1], // Kurva easing premium
         },
       }}
-      className="relative w-full max-w-[480px] h-[420px] xl:max-w-full xl:h-[520px] xl:mx-0 mt-6 xl:mt-6 border border-accent"
+      className="relative w-full max-w-[480px] h-[420px] xl:max-w-full xl:h-[520px] xl:mx-0 mt-6 xl:mt-6 border-2 border-accent"
     >
       <Image
         src="/image/profile.png"

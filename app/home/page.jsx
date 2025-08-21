@@ -50,15 +50,15 @@ const Home = () => {
 
             {/* Action Buttons */}
             {/* Action Buttons */}
-            <div className="flex flex-row max-w-full items-center gap-2 mt-8">
-              <div className="relative group/button flex-wrap justify-start sm:justify-start">
+            <div className="flex flex-row sm:max-w-full sm:justify-start justify-center items-center gap-1 mt-8">
+              <div className="relative group/button flex-wrap sm:justify-start">
                 <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-30 group-hover/button:opacity-60 transition-opacity duration-500"></div>
                 <Button
                   variant="outline"
-                  className="relative h-12 sm:h-14 rounded-lg uppercase flex items-center gap-2 px-6 py-4  bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300 whitespace-nowrap text-sm sm:text-base"
+                  className="relative w-12 md:w-fit h-12 sm:h-14 rounded-lg uppercase flex items-center gap-2 px-1 sm:px-4 py-4  bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300 whitespace-nowrap text-sm sm:text-base"
                 >
-                  <span>Chat With Me</span>
-                  <MessageCircleMore className="text-lg" />
+                  <span className="hidden md:flex">Let{'"'}s Connect</span>
+                  <MessageCircleMore className="flex md:hidden text-md" />
                 </Button>
               </div>
 

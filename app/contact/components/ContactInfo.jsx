@@ -13,7 +13,7 @@ export default function ContactInfo() {
   return (
     <div className="p-8 bg-transparent h-5/6 mt-8  border border-accent rounded-lg shadow-md">
       <h2 className="hidden sm:flex text-5xl font-bold mb-14">Contact</h2>
-      <h1 className="flex sm:hidden pb-10 text-5xl font-bold tracking-tight">
+      <h1 className="flex sm:hidden pb-10 text-3xl text-center font-bold tracking-tight">
         <span className="relative inline-block">
           <span className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></span>
           <span className="relative text-shadow-lg bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
