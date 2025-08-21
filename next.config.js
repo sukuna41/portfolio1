@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
   trailingSlash: true,
@@ -6,3 +7,4 @@ const nextConfig = {
   },
   skipTrailingSlashRedirect: true,
 };
+module.exports = nextConfig;
