@@ -7,10 +7,12 @@ export default function LoadingSpinner() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Pastikan hanya di client-side
+    if (typeof window === "undefined") return;
+
     const handleStart = () => setIsLoading(true);
     const handleComplete = () => setIsLoading(false);
 
-    // Listen to route changes
     window.addEventListener("beforeunload", handleStart);
     window.addEventListener("load", handleComplete);
 

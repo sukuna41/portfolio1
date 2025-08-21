@@ -18,8 +18,10 @@ const MobileNav = () => {
   const handleNavigation = (link) => {
     setIsOpen(false);
 
+    // Pastikan hanya di client-side
+    if (typeof window === "undefined") return;
+
     if (pathname === "/") {
-      // Jika sudah di homepage, scroll ke section
       setTimeout(() => {
         const element = document.getElementById(link.hash.replace("#", ""));
         if (element) {
@@ -28,7 +30,6 @@ const MobileNav = () => {
         }
       }, 100);
     } else {
-      // Jika tidak di homepage, redirect ke homepage dengan hash
       window.location.href = `/${link.hash}`;
     }
   };

@@ -1,47 +1,38 @@
 "use client";
 import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function ScrollHandler() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     const handleScrollToSection = () => {
-      if (pathname === "/") {
-        const hash = window.location.hash;
+      const hash = window.location.hash;
 
-        if (hash) {
-          const targetId = hash.replace("#", "");
-          const element = document.getElementById(targetId);
+      if (hash) {
+        const targetId = hash.replace("#", "");
+        const element = document.getElementById(targetId);
 
-          if (element) {
-            // Cegah multiple scroll triggers
-            if (window.__isScrolling) return;
-            window.__isScrolling = true;
+        if (element) {
+          const header = document.querySelector("header");
+          const headerHeight = header ? header.offsetHeight : 80;
+          const elementPosition = element.offsetTop - headerHeight;
 
-            const header = document.querySelector("header");
-            const headerHeight = header ? header.offsetHeight : 80;
-            const elementPosition = element.offsetTop - headerHeight;
-
-            window.scrollTo({
-              top: elementPosition,
-              behavior: "smooth",
-            });
-
-            // Reset flag setelah scroll selesai
-            setTimeout(() => {
-              window.__isScrolling = false;
-            }, 1000);
-          }
+          // Scroll ke posisi elemen target
+          window.scrollTo({
+            top: elementPosition,
+            behavior: "smooth",
+          });
         }
       }
     };
 
+    // Menangani scroll saat halaman dimuat
     handleScrollToSection();
 
-    // Handle hash changes
     const handleHashChange = () => {
+      const currentHash = window.location.hash;
+      if (currentHash === hash) return; // Cegah scroll jika hash sama
       handleScrollToSection();
     };
 
@@ -50,7 +41,7 @@ export default function ScrollHandler() {
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return null;
 }

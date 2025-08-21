@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 const links = [
   { name: "home", path: "/", hash: "#home" },
@@ -11,20 +12,39 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
+  const [currentHash, setCurrentHash] = useState("");
+
+  useEffect(() => {
+    // Pastikan hanya di client-side
+    if (typeof window === "undefined") return;
+
+    setCurrentHash(window.location.hash);
+
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   const handleNavigation = (e, link) => {
     e.preventDefault();
 
+    // Pastikan hanya di client-side
+    if (typeof window === "undefined") return;
+
     if (pathname === "/") {
-      // Jika sudah di homepage, scroll ke section
       const element = document.getElementById(link.hash.replace("#", ""));
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        // Update URL hash tanpa reload
         window.history.pushState(null, "", link.hash);
+        setCurrentHash(link.hash);
       }
     } else {
-      // Jika tidak di homepage, redirect ke homepage dengan hash
       window.location.href = `/${link.hash}`;
     }
   };
@@ -32,7 +52,7 @@ const Nav = () => {
   return (
     <nav className="flex gap-6">
       {links.map((link, index) => {
-        const isActive = pathname === "/" && window.location.hash === link.hash;
+        const isActive = pathname === "/" && currentHash === link.hash;
 
         return (
           <a

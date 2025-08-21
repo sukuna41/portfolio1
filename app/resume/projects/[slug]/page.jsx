@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
 
   if (!project) {
     return {
-      title: "Project Not Found",
+      title: project?.title || "Project Not Found",
     };
   }
 

@@ -4,4 +4,5 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  skipTrailingSlashRedirect: true,
 };
