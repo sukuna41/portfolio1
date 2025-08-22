@@ -37,10 +37,10 @@ const MobileNav = () => {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[44px] text-accent" />
+        <CiMenuFries className="text-[34px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="mt-1 mb-32 text-left text-2xl">
+        <div className="mb-36 text-left text-2xl">
           <a
             href="/#home"
             onClick={(e) => {
@@ -55,7 +55,7 @@ const MobileNav = () => {
             </h1>
           </a>
         </div>
-        <nav className="flex px-2 flex-col justify-center items-start gap-6">
+        <nav className="flex px-1 flex-col justify-center items-start gap-6">
           {links.map((link, index) => (
             <a
               href={link.path + link.hash}
@@ -64,7 +64,7 @@ const MobileNav = () => {
                 e.preventDefault();
                 handleNavigation(link);
               }}
-              className="text-2xl capitalize hover:text-accent transition-all cursor-pointer"
+              className="text-lg capitalize hover:text-accent transition-all cursor-pointer"
             >
               {link.name}
             </a>

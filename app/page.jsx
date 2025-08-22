@@ -1,11 +1,10 @@
 "use client";
 import { Suspense } from "react";
-import Home from "./home/page.jsx";
-import About from "./about/page.jsx";
-import Resume from "./resume/page.jsx";
-import Contact from "./contact/page.jsx";
-import ScrollHandler from "../components/ScrollHandler";
-import GridBackground from "@/components/effects/GridBackground";
+import Home from "./home/home.jsx";
+import About from "./about/about.jsx";
+import Resume from "./resume/resume.jsx";
+import Contact from "./contact/contact.jsx";
+import ScrollHandler from "../components/ScrollHandler.jsx";
 
 export default function Page() {
   return (

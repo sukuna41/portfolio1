@@ -10,14 +10,14 @@
 
 .light {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(0, 255, 135, 0.1) 10%,
-    rgba(254, 254, 254, 0.1) 20%,
-    rgba(0, 255, 0, 0.2) 40%,
+    rgba(0, 255, 135, 0.4) 10%,
+    rgba(254, 254, 254, 0.2) 20%,
+    rgba(0, 255, 0, 0.5) 40%,
     transparent 10%
   );
   filter: blur(90px);

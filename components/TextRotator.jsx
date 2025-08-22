@@ -1,17 +1,11 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
-const WORDS = [
-  "Frontend Developer",
-  "UI/UX Designer",
-  "Website Developer",
-  "Mobile App Developer",
-];
 const TextRotator = ({
   words,
-  typingSpeed = 150,
-  erasingSpeed = 100,
-  pauseDuration = 2000,
+  typingSpeed = 140,
+  erasingSpeed = 80,
+  pauseDuration = 1200,
 }) => {
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
@@ -51,10 +45,8 @@ const TextRotator = ({
 
   return (
     <div className="inline-flex items-center">
-      <span className="text-xl md:text-3xl bg-gradient-to-r  from-white via-blue-100 to-green-200 bg-clip-text text-transparent font-light">
-        {text}
-      </span>
-      <span className="w-[3px] h-6 bg-gradient-to-t from-accent to-accent-hover ml-1 animate-blink" />
+      <span className="">{text}</span>
+      <span className="w-[5px] h-6 bg-gradient-to-t from-accent to-accent-hover ml-1 animate-blink" />
     </div>
   );
 };

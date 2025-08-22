@@ -8,7 +8,7 @@ const Experience = () => {
         {experienceData.map((exp) => (
           <div
             key={exp.id}
-            className={`pt-6 lg:pt-0  border-t-4 ml-0 lg:ml-2 lg:border-l-4 lg:border-t-0 leading-5 ${exp.color} lg:pl-4 text-center lg:text-left`}
+            className={`pt-6 lg:pt-0  border-t-2 ml-0 lg:ml-2 lg:border-l-4 lg:border-t-0 leading-5 ${exp.color} lg:pl-4 text-center lg:text-left`}
           >
             <h2 className="text-xl font-semibold text-gray-800">{exp.title}</h2>
             <p className="text-gray-600">{exp.company}</p>

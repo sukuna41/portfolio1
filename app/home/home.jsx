@@ -5,22 +5,21 @@ import TextRotator from "@/components/TextRotator";
 import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
-  "IT Office Administartion",
-  "IT Support",
-  "Junior Web Developer",
+  "Junior Programer",
+  "Web Developer",
+  "Front End Developer",
 ];
 
 const Home = () => {
   return (
     <section className="h-full relative">
-      {/* Main Container - using flex for two-column layout */}
-      <div className="px-10 md:px-12 lg:px-24 my-10 md:py-6 md:pb-14 relative h-full bg-transparent  z-10 flex flex-col xl:flex-row gap-8 xl:gap-8 items-center">
+      {/* Main Container*/}
+      <div className="px-6 md:px-12 lg:px-24 md:py-6 md:pb-14 relative h-full bg-transparent  z-10 flex flex-col xl:flex-row gap-8 xl:gap-8 items-center">
         {/* Left Column - Text Content */}
         <div className="w-full xl:w-1/2 order-2 xl:order-1 xl:py-2">
-          {/* Badge/Title */}
           {/* Main Heading */}
           <div className="relative xl:mt-6 ">
-            <h1 className="text-6xl lg:text-8xl md:text-7xl sm:text-6xl  font-bold tracking-tight">
+            <h1 className="text-7xl lg:text-8xl md:text-7xl sm:text-6xl font-bold tracking-tight">
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></span>
                 <span className="relative text-shadow-lg bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -37,25 +36,24 @@ const Home = () => {
             </h1>
 
             {/* Profession Rotator */}
-            <div className="py-4 ">
+            <div className="font-semibold py-4 text-xl md:text-3xl bg-gradient-to-r  from-white via-green-200 to-accent/50 bg-clip-text text-transparent">
               <TextRotator words={PROFESSION_WORDS} />
             </div>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed my-4">
+            <p className="text-md sm:text-lg text-muted-foreground leading-relaxed my-2">
               A graduate of Computer Science with experience in campus
               organizations and industry, meticulous, systematic, and
               detail-oriented.
             </p>
 
             {/* Action Buttons */}
-            {/* Action Buttons */}
-            <div className="flex flex-row sm:max-w-full sm:justify-start justify-center items-center gap-1 mt-8">
-              <div className="relative group/button flex-wrap sm:justify-start">
+            <div className="flex flex-row sm:max-w-full sm:justify-start justify-center items-center gap-2 mt-8">
+              <div className="relative group/button hidden md:flex flex-wrap sm:justify-start">
                 <div className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-30 group-hover/button:opacity-60 transition-opacity duration-500"></div>
                 <Button
                   variant="outline"
-                  className="relative w-12 md:w-fit h-12 sm:h-14 rounded-lg uppercase flex items-center gap-2 px-1 sm:px-4 py-4  bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300 whitespace-nowrap text-sm sm:text-base"
+                  className="relative w-14 md:w-fit h-14 sm:h-14 rounded-lg uppercase flex items-center gap-2 px-1 sm:px-4 py-4  bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:border-primary/50 transition-all duration-300 whitespace-nowrap text-sm sm:text-base"
                 >
                   <span className="hidden md:flex">Let{'"'}s Connect</span>
                   <MessageCircleMore className="flex md:hidden text-md" />
@@ -65,8 +63,8 @@ const Home = () => {
               <div className="w-full xl:w-1/2 relative group/button flex items-center flex-wrap xl:justify-start sm:justify-start">
                 <div className="absolute -inset-0.5 bg-gradient-to-tr from-accent to-accent-baja blur-xl opacity-5"></div>
                 <Social
-                  containerStyle="flex gap-1 justify-center items-center h-12"
-                  iconStyle="relative w-12 h-12 sm:h-14 sm:w-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
+                  containerStyle="flex sm:gap-2 gap-3 justify-center items-center h-12"
+                  iconStyle="relative w-14 h-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
                 />
               </div>
             </div>

@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-current/80 backdrop-blur-xl px-8 md:px-12 lg:px-24 py-4 text-white">
+    <header className="sticky top-0 z-50 bg-current/80 backdrop-blur-xl px-6 md:px-12 lg:px-24 py-4 text-white">
       <div className="flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="pt-4 text-3xl font-semibold">
+          <h1 className="pt-2 text-2xl font-semibold">
             <span className="text-accent">[</span>Gilang
             <span className="text-accent">]</span>
           </h1>
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="pt-4 md:hidden">
+        <div className="pt-2 md:hidden">
           <MobileNav />
         </div>
       </div>

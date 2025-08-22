@@ -1,12 +1,13 @@
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
-import { Suspense } from "react";
 
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
-import LoadingSpinner from "../components/LoadingSpinner";
+import LoadingSpinner from "@/components/LoadingSpinner";
 import StairTransition from "@/components/StairTransition";
 import MovingLights from "@/components/effects/MovingLights";
+import AnimatedGrid from "@/components/effects/AnimatedGrid";
+import GridBackground from "@/components/effects/GridBackground";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -31,6 +32,8 @@ export default function RootLayout({ children }) {
 
         <div className="content-layer">
           <Header />
+          <GridBackground></GridBackground>
+          <AnimatedGrid></AnimatedGrid>
           <MovingLights></MovingLights>
           <LoadingSpinner>{children}</LoadingSpinner>
           <StairTransition>{children}</StairTransition>
