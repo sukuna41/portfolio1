@@ -50,9 +50,6 @@ module.exports = {
           to: { height: "0" },
         },
       },
-      //colors yang dihapus
-
-      //ini untuk borderRadius yang dihapus
     },
   },
   plugins: [require("tailwindcss-animate")],
