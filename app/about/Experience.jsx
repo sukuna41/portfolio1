@@ -33,11 +33,8 @@ const Experience = () => {
             <h2 className="text-xl font-semibold text-gray-800">{exp.title}</h2>
             <p className="text-gray-600">{exp.position}</p>
             <br />
-<<<<<<< HEAD
             <p className="font-semibold text-gray-800">{exp.company}</p>
-=======
-            <p className="text-gray-600">{exp.company}</p>
->>>>>>> 3397a4f8981dbf537b8370672fcb1b8927247a68
+
             <p className="text-gray-600">{exp.place}</p>
             <p className="text-gray-600">{exp.period}</p>
             <br />

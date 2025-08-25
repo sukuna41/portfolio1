@@ -15,11 +15,7 @@ export const experienceData = [
   },
   {
     id: 2,
-<<<<<<< HEAD
-    title: "Operator Production",
-=======
     title: "Operation Production",
->>>>>>> 3397a4f8981dbf537b8370672fcb1b8927247a68
     position: "Production Control",
     company: "PT Astra Honda Motor",
     place: "North Jakarta",
@@ -37,11 +33,7 @@ export const experienceData = [
     position: "Sales & Customer Engagement",
     company: "HD Group",
     place: "Remote",
-<<<<<<< HEAD
-    period: "February 2022 - November 2022",
-=======
     period: "February 2022 - November 2022 ",
->>>>>>> 3397a4f8981dbf537b8370672fcb1b8927247a68
     color: "border-accent",
     responsibilities: [
       "Promoted products through social media.",
