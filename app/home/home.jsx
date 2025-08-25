@@ -5,21 +5,21 @@ import TextRotator from "@/components/TextRotator";
 import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
-  "Junior Programer",
-  "Web Developer",
+  "Junior Web Developer",
   "Front End Developer",
+  "Support Administration",
 ];
 
 const Home = () => {
   return (
     <section className="h-full relative">
       {/* Main Container*/}
-      <div className="px-6 md:px-12 lg:px-24 md:py-6 md:pb-14 relative h-full bg-transparent  z-10 flex flex-col xl:flex-row gap-8 xl:gap-8 items-center">
+      <div className="px-6 md:px-12 lg:px-24 md:py-6 md:pb-14 relative h-full sz-10 flex flex-col lg:flex-row gap-8 xl:gap-8 items-center">
         {/* Left Column - Text Content */}
         <div className="w-full xl:w-1/2 order-2 xl:order-1 xl:py-2">
           {/* Main Heading */}
           <div className="relative xl:mt-6 ">
-            <h1 className="text-7xl lg:text-8xl md:text-7xl sm:text-6xl font-bold tracking-tight">
+            <h1 className="text-6xl lg:text-8xl md:text-7xl sm:text-6xl font-bold tracking-tight">
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-gradient-to-r from-accent to-accent-baja blur-2xl opacity-20"></span>
                 <span className="relative text-shadow-lg bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -64,7 +64,7 @@ const Home = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-tr from-accent to-accent-baja blur-xl opacity-5"></div>
                 <Social
                   containerStyle="flex sm:gap-2 gap-3 justify-between w-full sm:justify-center sm:w-auto items-center h-14"
-                  iconStyle="relative w-20 sm:h-14 h-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
+                  iconStyle="relative sm:w-14 w-20 sm:h-14 h-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
                 />
               </div>
             </div>
@@ -72,9 +72,10 @@ const Home = () => {
         </div>
 
         {/* Right Column - Photo */}
-        <div className="w-full xl:w-1/2 order-1 xl:order-2 flex justify-end items-end">
-          <div className="relative flex xl:flex w-full max-w-md xl:max-w-lg md:hidden">
-            <Photo />
+        <div className="flex sm:hidden lg:flex xl:ml-8 mt-8 w-full h-[250px] lg:h-[500px] border-2 border-accent order-1 lg:order-2 justify-end items-end">
+          {/* Wrapper yang menentukan ukuran penuh */}
+          <div className="relative w-full h-full">
+            <Photo className="w-full h-full" imgClassName="rounded-xl" />
           </div>
         </div>
       </div>

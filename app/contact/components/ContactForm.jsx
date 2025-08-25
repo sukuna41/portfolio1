@@ -66,6 +66,14 @@ export default function ContactForm() {
       <h2 className="hidden sm:flex text-6xl text-primary font-bold mb-4">
         Lets Connect
       </h2>
+      <h1 className="flex sm:hidden pb-6 text-3xl font-bold tracking-tight justify-center text-center w-full">
+        <span className="relative inline-block mt-1">
+          <span className="absolute -inset-2 bg-gradient-to-r from-accent-baja to-accent/80 blur-2xl opacity-20"></span>
+          <span className="relative text-shadow-lg bg-gradient-to-t from-primary via-primary/90 to-primary/80 bg-clip-text text-transparent">
+            Get in Touch
+          </span>
+        </span>
+      </h1>
 
       {submitStatus === "success" && (
         <div className="mb-4 p-3 bg-green-100 text-green-700 rounded border border-green-400">

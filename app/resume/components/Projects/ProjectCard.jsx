@@ -20,7 +20,8 @@ export default function ProjectCard({ project }) {
             alt={project.title}
             width={440}
             height={100}
-            className="object-cover rounded-lg w-100% h-100%  contrast-110 brightness-90 saturate-110 transition-filter duration-300 group-hover:scale-y-105"
+            style={{ objectPosition: "top" }}
+            className="object-cover rounded-lg w-100% h-[160px] lg:h-[200px]  contrast-110 brightness-90 saturate-110 transition-filter duration-300 group-hover:scale-y-105"
           />
         </div>
         {/* Content */}

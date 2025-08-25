@@ -1,19 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { experienceData } from "./ExperienceData";
-import { ExpandMore, ExpandLess } from "@mui/icons-material"; // Import icons
+import { ExpandMore, ExpandLess } from "@mui/icons-material";
 
 const Experience = () => {
   const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Tentukan berapa banyak item yang ditampilkan
-  const displayedExperiences = showAll
-    ? experienceData
-    : experienceData.slice(0, 3);
+  // Deteksi ukuran layar
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024); // <1024px = mobile/tablet
+    };
+
+    handleResize(); // cek saat pertama kali render
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Tentukan item yang ditampilkan
+  const displayedExperiences =
+    isMobile && !showAll ? experienceData.slice(0, 3) : experienceData;
 
   return (
     <div className="relative w-full p-2 bg-transparent">
-      <div className="space-y-6 w-full px-2 lg:mx-0">
+      <div className="space-y-6 lg:space-y-14 w-full px-2 lg:mx-0">
         {displayedExperiences.map((exp) => (
           <div
             key={exp.id}
@@ -21,19 +32,18 @@ const Experience = () => {
           >
             <h2 className="text-xl font-semibold text-gray-800">{exp.title}</h2>
             <p className="text-gray-600">{exp.position}</p>
-            <p className="text-gray-600">
-              {exp.company} - {exp.place}
-            </p>
-
+            <br />
+            <p className="font-semibold text-gray-800">{exp.company}</p>
+            <p className="text-gray-600">{exp.place}</p>
             <p className="text-gray-600">{exp.period}</p>
             <br />
             <p className="text-xs text-gray-600">{exp.responsibilities}</p>
           </div>
         ))}
 
-        {/* Tombol See More/Less untuk mobile saja */}
-        {experienceData.length > 3 && (
-          <div className="lg:hidden flex justify-center mt-6">
+        {/* Tombol hanya render di mobile */}
+        {isMobile && experienceData.length > 3 && (
+          <div className="flex justify-center mt-6">
             <Button
               onClick={() => setShowAll(!showAll)}
               variant="outline"

@@ -27,7 +27,8 @@ function CertificateCard({ certificate }) {
               alt={certificate.name}
               width={440}
               height={100}
-              className="certificate-image w-100% h-100% object-cover contrast-110 brightness-90 saturate-110 transition-filter duration-300"
+              style={{ objectPosition: "top" }}
+              className="certificate-image w-100% h-[260px] lg:h-[270px]  object-cover contrast-110 brightness-90 saturate-110 transition-filter duration-300"
             />
 
             {/* Hover Overlay */}
@@ -35,11 +36,9 @@ function CertificateCard({ certificate }) {
               className="overlay absolute inset-0 bg-gradient-to-b from-black/30 to-black/70 opacity-0 transition-opacity duration-300 cursor-pointer flex items-center justify-center"
               onClick={() => setIsOpen(true)}
             >
-              <div className="hover-content text-accent text-justify drop-shadow-lg transition-all duration-400 transform translate-y-5">
-                <IoIosExpand className="text-6xl" />
-                <p className="text-2xl sm:text-xl md:text-2xl font-semibold">
-                  View Certificate
-                </p>
+              <div className="relative flex flex-col items-center justify-center text-accent text-justify drop-shadow-lg transition-all duration-400 transform translate-y-5">
+                <IoIosExpand className="text-4xl" />
+                View Certificate
               </div>
             </div>
           </div>

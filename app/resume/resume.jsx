@@ -13,19 +13,19 @@ export default function Resume() {
   return (
     <section className="h-full relative">
       <div className="px-6 my-0 sm:py-8 md:py-10 md:px-12 lg:px-24 py-2 w-full mx-auto h-full">
-        <h1 className="text-5xl py-10 lg:pt-0 md:text-4xl xl:text-7xl text-left sm:text-center font-bold tracking-tight">
+        <h1 className="text-5xl py-10 lg:pt-0 lg:text-7xl text-left sm:text-center font-bold tracking-tight">
           <div className="relative inline-block">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-3xl opacity-20"></div>
             <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
               My
             </span>
           </div>
-          <span className="relative inline-block mt-2">
+          <div className="relative inline-block mt-2">
             <span className="absolute -inset-0.5 bg-gradient-to-r from-accent-baja to-accent/80 blur-3xl opacity-20"></span>
             <span className="relative bg-gradient-to-r from-accent to-accent/60 bg-clip-text text-transparent">
               Portfolio
             </span>
-          </span>
+          </div>
         </h1>
         {/* Tab Navigation */}
         <Tabs

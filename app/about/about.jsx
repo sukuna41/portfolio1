@@ -19,7 +19,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-6xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-left font-bold tracking-tight">
+            <h1 className="text-6xl py-4 lg:pt-0 md:text-8xl lg:text-8xl text-left font-bold tracking-tight">
               <div className="relative inline-block">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-xl opacity-15"></div>
                 <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -34,8 +34,8 @@ const About = () => {
               </span>
             </h1>
 
-            <div className="text-sm sm:text-lg">
-              <p className="text-white text-shadow-lg leading-7 text-left sm:text-center md:text-justify mt-4">
+            <div className="text-sm sm:text-md xl:text-lg">
+              <p className="text-white text-shadow-lg leading-7 text-left sm:text-center md:text-justify mt-0">
                 Information Technology graduate from Kuningan University with
                 strong learning ability, problem-solving skills, and expertise
                 in data management. Experienced in leadership, time management,
@@ -89,10 +89,10 @@ const About = () => {
           </motion.div>
         </div>
         {/* Right - Experience (scrollable with proper visibility) */}
-        <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-12 md:mt-4 pt-6 lg:mt-8 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(90vh-2rem)] xl:h-[calc(80vh-2rem)]">
+        <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-12 md:mt-4 pt-6 lg:mt-8 md:pb-0 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(90vh-2rem)]">
           {/* Header */}
           <div className="sticky top-0 pt-4 pb-8 z-10">
-            <h1 className="text-4xl ml-0 lg:ml-4 text-center lg:text-left font-bold tracking-tight">
+            <h1 className="text-5xl ml-0 lg:ml-4 text-center lg:text-left font-bold tracking-tight">
               <span className="relative bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
                 Experience
               </span>
