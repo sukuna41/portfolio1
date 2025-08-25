@@ -21,10 +21,9 @@ const Experience = () => {
           >
             <h2 className="text-xl font-semibold text-gray-800">{exp.title}</h2>
             <p className="text-gray-600">{exp.position}</p>
-            <p className="text-gray-600">
-              {exp.company} - {exp.place}
-            </p>
-
+            <br />
+            <p className="text-gray-600">{exp.company}</p>
+            <p className="text-gray-600">{exp.place}</p>
             <p className="text-gray-600">{exp.period}</p>
             <br />
             <p className="text-xs text-gray-600">{exp.responsibilities}</p>
