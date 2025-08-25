@@ -19,7 +19,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-6xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-center lg:text-left font-bold tracking-tight">
+            <h1 className="text-6xl py-10 lg:pt-0 md:text-8xl lg:text-8xl text-left font-bold tracking-tight">
               <div className="relative inline-block">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-baja blur-xl opacity-15"></div>
                 <span className="relative bg-gradient-to-r from-white via-blue-100 to-green-200 bg-clip-text text-transparent">
@@ -35,7 +35,7 @@ const About = () => {
             </h1>
 
             <div className="text-sm sm:text-lg">
-              <p className="text-white text-shadow-lg leading-7 text-justify sm:text-center md:text-justify mt-4">
+              <p className="text-white text-shadow-lg leading-7 text-left sm:text-center md:text-justify mt-4">
                 Information Technology graduate from Kuningan University with
                 strong learning ability, problem-solving skills, and expertise
                 in data management. Experienced in leadership, time management,

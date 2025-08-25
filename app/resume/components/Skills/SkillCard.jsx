@@ -16,7 +16,7 @@ export default function SkillCard({ skill }) {
                 {skill.name.charAt(0)}
               </span>
             </div>
-            <h3 className="text-xl text-gradient font-bold text-center">
+            <h3 className="text-sm sm:text-xl text-gradient font-bold text-center">
               <span className="relative bg-accent-baja bg-clip-text text-transparent group-hover:text-accent/80 transition-colors duration-300">
                 {skill.name}
               </span>
