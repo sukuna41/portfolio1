@@ -17,7 +17,7 @@ export const experienceData = [
     id: 2,
     title: "Operation Production",
     position: "Production Control",
-    company: "PT AHM",
+    company: "PT Astra Honda Motor",
     place: "North Jakarta",
     period: "April 2018 - April 2020",
     color: "border-accent",
