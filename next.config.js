@@ -3,11 +3,10 @@ const nextConfig = {
   output: "export",
   trailingSlash: true,
   images: {
-    unoptimized: true, // Penting untuk static export
+    unoptimized: true,
   },
-  // HAPUS basePath dan assetPrefix untuk repository username.github.io
-  // basePath: "/portfolio1-gilang.github.io",  // HAPUS BARIS INI
-  // assetPrefix: "/portfolio1-gilang.github.io/",  // HAPUS BARIS INI
+  basePath: "/portfolio1",
+  assetPrefix: "/portfolio1/",
   skipTrailingSlashRedirect: true,
 };
 
