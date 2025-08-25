@@ -60,13 +60,12 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="w-full xl:w-1/2 relative group/button flex items-center flex-wrap xl:justify-start sm:justify-between">
-  <div className="absolute -inset-0.5 bg-gradient-to-tr from-accent to-accent-baja blur-xl opacity-5"></div>
-  <Social
-    containerStyle="flex sm:gap-2 gap-3 justify-between w-full sm:justify-center sm:w-auto items-center h-12"
-    iconStyle="relative w-14 h-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
-  />
-</div>
+              <div className="w-full xl:w-1/2 relative group/button flex items-center flex-wrap xl:justify-start sm:justify-start">
+                <div className="absolute -inset-0.5 bg-gradient-to-tr from-accent to-accent-baja blur-xl opacity-5"></div>
+                <Social
+                  containerStyle="flex sm:gap-2 gap-3 justify-center items-center h-12"
+                  iconStyle="relative w-14 h-14 rounded-lg flex justify-center items-center bg-gradient-to-b from-accent to-accent/60 hover:bg-accent text-primary hover:text-primary border border-accent/30 hover:border-primary/50 transition-all duration-300"
+                />
               </div>
             </div>
           </div>
