@@ -16,7 +16,7 @@ export const experienceData = [
   {
     id: 2,
     title: "Operation Production",
-    position: "Operator Production",
+    position: "Production Control",
     company: "PT Astra Honda Motor",
     place: "North Jakarta",
     period: "April 2018 - April 2020",
@@ -29,10 +29,10 @@ export const experienceData = [
   },
   {
     id: 3,
-    title: "Freelance Digital Marketing",
+    title: "Freelance",
     position: "Sales & Customer Engagement",
     company: "HD Group",
-    place: "Kuningan",
+    place: "Remote",
     period: "February 2022 - November 2022 ",
     color: "border-accent",
     responsibilities: [
@@ -57,7 +57,7 @@ export const experienceData = [
   },
   {
     id: 5,
-    title: "Freelance Testnet Participant",
+    title: "Freelance",
     position: "Testnet & Lightnode Operator",
     company: "WEB3 Crypto Community",
     place: "Remote",
@@ -85,7 +85,7 @@ export const experienceData = [
   },
   {
     id: 7,
-    title: "Pre-launch Initiative",
+    title: "Pre launch Initiative",
     position: "Deputy Secretary",
     company: "Koperasi Cahaya Pintu Nusantara",
     place: "Kuningan",
