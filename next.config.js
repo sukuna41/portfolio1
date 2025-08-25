@@ -6,9 +6,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // basePath: process.env.NODE_ENV === "production" ? "/portfolio1" : "",
-  // assetPrefix: process.env.NODE_ENV === "production" ? "/portfolio1/" : "",
-  // skipTrailingSlashRedirect: true,
+  basePath: process.env.NODE_ENV === "production" ? "/portfolio1" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/portfolio1/" : "",
+  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;
