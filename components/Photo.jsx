@@ -31,3 +31,4 @@ const Photo = () => {
     </motion.div>
   );
 };
+export default Photo;
