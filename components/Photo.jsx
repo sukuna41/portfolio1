@@ -19,14 +19,12 @@ const Photo = () => {
       className="relative w-full max-w-[480px] h-[420px] xl:max-w-full xl:h-[520px] xl:mx-0 mt-6 xl:mt-6 border-2 border-accent"
     >
       <Image
-        src="/images/profile.png"
+        src="/portfolio1/images/profile.png"
         alt="Gilang Ramadhan"
         fill
         className="object-cover"
         quality={100}
-        style={{
-          objectPosition: "center",
-        }}
+        style={{ objectPosition: "center" }}
       />
     </motion.div>
   );
