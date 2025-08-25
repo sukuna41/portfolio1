@@ -13,16 +13,21 @@ const Experience = () => {
 
   return (
     <div className="relative w-full p-2 bg-transparent">
-      <div className="space-y-6 w-60 mx-auto lg:mx-0">
+      <div className="space-y-6 w-full px-2 lg:mx-0">
         {displayedExperiences.map((exp) => (
           <div
             key={exp.id}
             className={`pt-6 lg:pt-0 border-t-2 ml-0 lg:ml-2 lg:border-l-4 lg:border-t-0 leading-5 ${exp.color} lg:pl-4 text-center lg:text-left`}
           >
             <h2 className="text-xl font-semibold text-gray-800">{exp.title}</h2>
-            <p className="text-gray-600">{exp.company}</p>
-            <p className="text-gray-600">{exp.place}</p>
+            <p className="text-gray-600">{exp.position}</p>
+            <p className="text-gray-600">
+              {exp.company} - {exp.place}
+            </p>
+
             <p className="text-gray-600">{exp.period}</p>
+            <br />
+            <p className="text-xs text-gray-600">{exp.responsibilities}</p>
           </div>
         ))}
 
