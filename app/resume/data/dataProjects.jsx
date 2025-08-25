@@ -6,7 +6,7 @@ export const projects = [
     title: "Deteksi Jenis Aglonema",
     description:
       "Aplikasi ini merupakan sebuah sistem berbasis kecerdasan buatan yang dirancang khusus untuk mendeteksi dan mengklasifikasikan jenis tanaman hias Aglonema secara otomatis dengan menggunakan teknologi Convolutional Neural Network (CNN). Sistem ini dikembangkan untuk membantu para pecinta tanaman, petani, kolektor, maupun pelaku bisnis tanaman hias dalam mengenali jenis-jenis aglonema dengan cepat, akurat, dan praktis, tanpa harus memiliki pengetahuan botani mendalam.",
-    image: "/image/projects/cnndeteksi.png",
+    image: "/images/projects/cnndeteksi.png",
     techStack: [
       "Python",
       "Computer Vision",
@@ -31,7 +31,7 @@ export const projects = [
     title: "Konversi KTP to Text",
     description:
       "Aplikasi ini merupakan sebuah sistem berbasis Optical Character Recognition (OCR) yang dirancang untuk mengonversi gambar KTP (Kartu Tanda Penduduk) menjadi data teks terstruktur secara otomatis, kemudian menyimpannya dalam format file Excel (.xlsx). Aplikasi ini ditujukan untuk mempermudah proses pendataan identitas penduduk dari dokumen cetak, yang selama ini dilakukan secara manual, menjadi cepat, efisien, dan minim kesalahan.",
-    image: "/image/projects/profile_porto.png",
+    image: "/images/projects/profile_porto.png",
     demoUrl: "#",
     githubUrl: "#",
     techStack: ["Python", "JavaScript", "OCR", "Android Studio"],
@@ -48,7 +48,7 @@ export const projects = [
     title: "Website Stok Barang",
     description:
       "Aplikasi Stok Barang adalah solusi digital yang dirancang untuk membantu Anda mengelola persediaan barang secara lebih efisien, praktis, dan akurat. Dengan antarmuka yang sederhana namun kaya fitur, aplikasi ini memungkinkan Anda memantau keluar-masuk barang, mencatat stok secara real-time, hingga menghasilkan laporan stok yang rapi dan mudah dipahami.",
-    image: "/image/projects/inventory_management.png",
+    image: "/images/projects/inventory_management.png",
     demoUrl: "#",
     githubUrl: "#",
     techStack: ["Python", "Algorithm"],
@@ -60,7 +60,7 @@ export const projects = [
     title: "Online Shop",
     description:
       "Aplikasi ini merupakan sebuah sistem berbasis kecerdasan buatan yang dirancang khusus untuk mendeteksi dan mengklasifikasikan jenis tanaman hias Aglonema secara otomatis dengan menggunakan teknologi Convolutional Neural Network (CNN). Sistem ini dikembangkan untuk membantu para pecinta tanaman, petani, kolektor, maupun pelaku bisnis tanaman hias dalam mengenali jenis-jenis aglonema dengan cepat, akurat, dan praktis, tanpa harus memiliki pengetahuan botani mendalam.",
-    image: "/image/projects/online_shop.png",
+    image: "/images/projects/online_shop.png",
     techStack: [
       "Python",
       "Computer Vision",
@@ -85,7 +85,7 @@ export const projects = [
     title: "Portfolio",
     description:
       "Aplikasi ini merupakan sebuah sistem berbasis Optical Character Recognition (OCR) yang dirancang untuk mengonversi gambar KTP (Kartu Tanda Penduduk) menjadi data teks terstruktur secara otomatis, kemudian menyimpannya dalam format file Excel (.xlsx). Aplikasi ini ditujukan untuk mempermudah proses pendataan identitas penduduk dari dokumen cetak, yang selama ini dilakukan secara manual, menjadi cepat, efisien, dan minim kesalahan.",
-    image: "/image/projects/profile_porto.png",
+    image: "/images/projects/profile_porto.png",
     demoUrl: "#",
     githubUrl: "#",
     techStack: ["Python", "JavaScript", "OCR", "Android Studio"],

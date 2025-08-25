@@ -1,119 +1,124 @@
 export const skills = [
   // ===== PROGRAMMING LANGUAGES =====
-  { id: 1, name: "HTML", category: "language", logo: "/image/skills/html.svg" },
-  { id: 2, name: "CSS", category: "language", logo: "/image/skills/css.svg" },
+  {
+    id: 1,
+    name: "HTML",
+    category: "language",
+    logo: "/images/skills/html.svg",
+  },
+  { id: 2, name: "CSS", category: "language", logo: "/images/skills/css.svg" },
   {
     id: 3,
     name: "JavaScript",
     category: "language",
-    logo: "/image/skills/javascript.svg",
+    logo: "/images/skills/javascript.svg",
   },
-  { id: 4, name: "PHP", category: "language", logo: "/image/skills/php.svg" },
+  { id: 4, name: "PHP", category: "language", logo: "/images/skills/php.svg" },
 
   // ===== FRAMEWORKS =====
   {
     id: 5,
     name: "React",
     category: "framework",
-    logo: "/image/skills/reactjs.svg",
+    logo: "/images/skills/reactjs.svg",
   },
   {
     id: 6,
     name: "Next.js",
     category: "framework",
-    logo: "/image/skills/nextjs.svg",
+    logo: "/images/skills/nextjs.svg",
   },
   {
     id: 7,
     name: "Tailwind CSS",
     category: "framework",
-    logo: "/image/skills/tailwind.svg",
+    logo: "/images/skills/tailwind.svg",
   },
   {
     id: 8,
     name: "Bootstrap",
     category: "framework",
-    logo: "/image/skills/bootstrap.svg",
+    logo: "/images/skills/bootstrap.svg",
   },
   {
     id: 9,
     name: "Node.js",
     category: "framework",
-    logo: "/image/skills/nodejs.svg",
+    logo: "/images/skills/nodejs.svg",
   },
   {
     id: 10,
     name: "Laravel",
     category: "framework",
-    logo: "/image/skills/laravel.svg",
+    logo: "/images/skills/laravel.svg",
   },
   {
     id: 11,
     name: "Code Igniter",
     category: "framework",
-    logo: "/image/skills/codeigniter.svg",
+    logo: "/images/skills/codeigniter.svg",
   },
 
   // ===== DEVELOPMENT TOOLS =====
-  { id: 12, name: "Git", category: "tool", logo: "/image/skills/git.svg" },
+  { id: 12, name: "Git", category: "tool", logo: "/images/skills/git.svg" },
   {
     id: 13,
     name: "VS Code",
     category: "tool",
-    logo: "/image/skills/vs-code.svg",
+    logo: "/images/skills/vs-code.svg",
   },
   {
     id: 14,
     name: "Android Studio",
     category: "tool",
-    logo: "/image/skills/Android-Studio.svg",
+    logo: "/images/skills/Android-Studio.svg",
   },
 
-  { id: 15, name: "Figma", category: "tool", logo: "/image/skills/figma.svg" },
-  { id: 16, name: "Xampp", category: "tool", logo: "/image/skills/xampp.svg" },
+  { id: 15, name: "Figma", category: "tool", logo: "/images/skills/figma.svg" },
+  { id: 16, name: "Xampp", category: "tool", logo: "/images/skills/xampp.svg" },
 
   // ===== SUPPORT ADMINISTRATION =====
   {
     id: 17,
     name: "Mirosoft Office",
     category: "administration",
-    logo: "/image/skills/microsoft-office.svg",
+    logo: "/images/skills/microsoft-office.svg",
   },
   // {
   //   id: 18,
   //   name: "Mcs Word",
   //   category: "administration",
-  //   logo: "/image/skills/microsoft-word.svg",
+  //   logo: "/images/skills/microsoft-word.svg",
   // },
   // {
   //   id: 19,
   //   name: "Mcs Excel",
   //   category: "administration",
-  //   logo: "/image/skills/microsoft-excel.svg",
+  //   logo: "/images/skills/microsoft-excel.svg",
   // },
   // {
   //   id: 20,
   //   name: "Mcs Powerpoint",
   //   category: "administration",
-  //   logo: "/image/skills/microsoft-powerpoint.svg",
+  //   logo: "/images/skills/microsoft-powerpoint.svg",
   // },
   {
     id: 21,
     name: "Adobe Photoshop",
     category: "administration",
-    logo: "/image/skills/photoshop.svg",
+    logo: "/images/skills/photoshop.svg",
   },
   {
     id: 22,
     name: "Canva",
     category: "administration",
-    logo: "/image/skills/canva.svg",
+    logo: "/images/skills/canva.svg",
   },
   {
     id: 23,
     name: "Capcut",
     category: "administration",
-    logo: "/image/skills/capcut.svg",
+    logo: "/images/skills/capcut.svg",
   },
 ];
 
