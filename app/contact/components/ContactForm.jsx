@@ -1,72 +1,41 @@
-// src/components/ContactForm.jsx
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { init, send } from "emailjs-com";
+import FormLayout from "./FormLayout";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+// Inisialisasi Email.js dengan User ID Anda
+init("5AdO5dipeQDitAab-");
 
+export default function ContactFormContainer() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (formData) => {
     setIsSubmitting(true);
-    setSubmitStatus(null);
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
 
     try {
-      // Simulasi pengiriman data (ganti dengan API call sesungguhnya)
-      console.log("Data yang dikirim:", formData);
-
-      // Contoh pengiriman ke API
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-
-      // if (response.ok) {
-      // Berhasil mengirim
-      setTimeout(() => {
-        setSubmitStatus("success");
-        setIsSubmitting(false);
-        setFormData({ name: "", email: "", message: "" });
-
-        // Reset status setelah 3 detik
-        setTimeout(() => setSubmitStatus(null), 3000);
-      }, 1500);
-      // } else {
-      //   throw new Error('Gagal mengirim pesan');
-      // }
+      await send("service_0q23x92", "template_mnuae05", templateParams);
+      toast.success("Successfully sent! Thank you for your support.");
     } catch (error) {
-      console.error("Error:", error);
-      setSubmitStatus("error");
+      toast.error("Error: Your message didn't send.");
+    } finally {
       setIsSubmitting(false);
-
-      // Reset status error setelah 3 detik
-      setTimeout(() => setSubmitStatus(null), 3000);
     }
   };
 
   return (
-    <div className="p-8 border bg-white h-5/6 md:mt-8 mt-1  border-white/60 rounded-lg shadow-md">
-      <h2 className="hidden sm:flex text-6xl text-primary font-bold mb-4">
-        Lets Connect
-      </h2>
-      <h1 className="flex sm:hidden pb-6 text-3xl font-bold tracking-tight justify-center text-center w-full">
+    <div className="p-6 border bg-white md:mt-8 mt-1 border-white/60 rounded-lg shadow-md">
+      <h1 className="hidden lg:flex text-7xl text-primary font-bold">
+        Send <br /> Message
+      </h1>
+      <h1 className="relative lg:hidden flex pb-6 text-3xl md:text-6xl font-bold tracking-tight justify-center text-center lg:text-left w-full">
         <span className="relative inline-block mt-1">
           <span className="absolute -inset-2 bg-gradient-to-r from-accent-baja to-accent/80 blur-2xl opacity-20"></span>
           <span className="relative text-shadow-lg bg-gradient-to-t from-primary via-primary/90 to-primary/80 bg-clip-text text-transparent">
@@ -75,65 +44,21 @@ export default function ContactForm() {
         </span>
       </h1>
 
-      {submitStatus === "success" && (
-        <div className="mb-4 p-3 bg-green-100 text-green-700 rounded border border-green-400">
-          Succesfully Send, Thank For your support.
-        </div>
-      )}
+      <FormLayout onSubmit={handleSubmit} isSubmitting={isSubmitting} />
 
-      {submitStatus === "error" && (
-        <div className="mb-4 p-3 bg-red-100 text-red-700 rounded border border-red-400">
-          Error your message dont sending.
-        </div>
-      )}
-
-      <form onSubmit={handleSubmit} className="mt:0 md:mt-14 space-y-4">
-        <div>
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 pl-6 text-primary  bg-transparent border border-primary rounded"
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 pl-6 text-primary bg-transparent border border-primary rounded"
-            required
-          />
-        </div>
-        <div>
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-2 pl-6 text-primary bg-transparent border border-primary rounded"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-        <Button
-          type="submit"
-          variant="outline"
-          disabled={isSubmitting}
-          className="relative h-10 w-full rounded-lg border border-primary uppercase flex items-center gap-2 px-8 py-6 bg-gradient-to-t from-primary via-primary/95 to-primary/90 hover:bg-primary/85 text-white hover:scale-y-105 hover:border-primary/50 hover:text-white transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
-        >
-          {isSubmitting ? (
-            <span className="font-normal">Mengirim...</span>
-          ) : (
-            <span className="font-normal">Send Message</span>
-          )}
-        </Button>
-      </form>
+      {/* Toast Container for notifications */}
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

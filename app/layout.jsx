@@ -2,9 +2,10 @@ import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 
 import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import LoadingSpinner from "@/components/LoadingSpinner";
-import StairTransition from "@/components/StairTransition";
+import Footer from "@/components/Footer";
+import PageTransition from "@/components/effects/PageTransition";
+import LoadingSpinner from "@/components/effects/LoadingSpinner";
+import StairTransition from "@/components/effects/StairTransition";
 import MovingLights from "@/components/effects/MovingLights";
 import AnimatedGrid from "@/components/effects/AnimatedGrid";
 import GridBackground from "@/components/effects/GridBackground";
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           <LoadingSpinner>{children}</LoadingSpinner>
           <StairTransition>{children}</StairTransition>
           <PageTransition>{children}</PageTransition>
+          <Footer />
         </div>
       </body>
     </html>

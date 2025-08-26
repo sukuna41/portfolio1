@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircleMore } from "lucide-react";
 import Social from "@/components/Social";
-import TextRotator from "@/components/TextRotator";
+import TextRotator from "@/components/effects/TextRotator";
 import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
