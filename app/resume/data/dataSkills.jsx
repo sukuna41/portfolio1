@@ -50,24 +50,24 @@ export const skills = [
     category: "framework",
     logo: "/portfolio1/images/skills/bootstrap.svg",
   },
-  {
-    id: 9,
-    name: "Node.js",
-    category: "framework",
-    logo: "/portfolio1/images/skills/nodejs.svg",
-  },
+  // {
+  //   id: 9,
+  //   name: "Node.js",
+  //   category: "framework",
+  //   logo: "/portfolio1/images/skills/nodejs.svg",
+  // },
   {
     id: 10,
     name: "Laravel",
     category: "framework",
     logo: "/portfolio1/images/skills/laravel.svg",
   },
-  {
-    id: 11,
-    name: "Code Igniter",
-    category: "framework",
-    logo: "/portfolio1/images/skills/codeigniter.svg",
-  },
+  // {
+  //   id: 11,
+  //   name: "Code Igniter",
+  //   category: "framework",
+  //   logo: "/portfolio1/images/skills/codeigniter.svg",
+  // },
 
   // ===== DEVELOPMENT TOOLS =====
   {

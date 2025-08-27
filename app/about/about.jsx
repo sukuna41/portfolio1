@@ -7,6 +7,17 @@ import { Code } from "lucide-react";
 import Experience from "./Experience";
 
 const About = () => {
+  // download CV
+  const handleOpenCV = () => {
+    const cvUrl = "/docs/CV_Gilang_Ramadhan.pdf, '_blank'";
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "CV_Gilang_Ramadhan.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="overflow-hidden h-max">
       {/* Content Grid - Reversed layout with About first */}
@@ -78,6 +89,7 @@ const About = () => {
                   variant="outline"
                   size="sm"
                   className="relative h-12 w-full sm:w-fit rounded-lg uppercase flex items-center gap-2 px-8 py-0 sm:py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
+                  onClick={handleOpenCV}
                 >
                   <FiDownload className="text-2xl" />
                   <span className="text-md sm:text-sm md:font-lg">
@@ -92,7 +104,7 @@ const About = () => {
         <div className="lg:w-1/3 w-full rounded-xl ml-0 lg:ml-2 xl:ml-4 mt-12 md:mt-4 pt-6 lg:mt-8 md:pb-0 pb-6 pl-0 xl:pl-4 bg-gradient-to-tl from-accent-baja to-white lg:h-[calc(90vh-2rem)]">
           {/* Header */}
           <div className="sticky top-0 pt-4 pb-8 z-10">
-            <h1 className="text-5xl ml-0 lg:ml-4 text-center lg:text-left font-bold tracking-tight">
+            <h1 className="text-5xl lg:text-4xl ml-0 lg:ml-4 text-center lg:text-left font-bold tracking-tight">
               <span className="relative bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
                 Experience
               </span>

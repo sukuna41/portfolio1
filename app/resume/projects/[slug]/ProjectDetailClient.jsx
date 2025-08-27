@@ -13,7 +13,7 @@ const ProjectDetailClient = ({ project }) => {
         <div className="flex flex-row items-center gap-4 mb-6">
           <Button className="rounded-sm h-6 bg-transparent w-auto px-1 py-1 sm:py-0 border border-accent  transition-all duration-300">
             <Link
-              href="/resume"
+              href="/#resume"
               className="flex items-center transition-colors"
             >
               <ChevronLeft className="h-4 w-auto text-white" />

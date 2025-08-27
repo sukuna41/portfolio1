@@ -27,7 +27,7 @@ export const projects = [
   {
     id: 2,
     slug: "inventory-management",
-    title: "Inventory Management Web",
+    title: "Inventory Management",
     description:
       "A web-based stock management system to track, manage, and report inventory in real-time.",
     image: "/portfolio1/images/projects/inventory_management.png",
@@ -36,27 +36,27 @@ export const projects = [
     techStack: ["Python", "Algorithm"],
     features: ["Track stock", "Generate reports", "Monitor in/out items"],
   },
-  {
-    id: 3,
-    slug: "bike-shop",
-    title: "Go Buy Go Bike",
-    description:
-      "E-commerce website for buying and selling bicycles with integrated product catalog and order system.",
-    image: "/portfolio1/images/projects/online_shop.png",
-    techStack: ["JavaScript", "Next.js", "TailwindCSS", "Node.js"],
-    features: [
-      "Product listing",
-      "Shopping cart",
-      "Order management",
-      "Responsive design",
-    ],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  // {
+  //   id: 3,
+  //   slug: "bike-shop",
+  //   title: "Go Buy Go Bike",
+  //   description:
+  //     "E-commerce website for buying and selling bicycles with integrated product catalog and order system.",
+  //   image: "/portfolio1/images/projects/online_shop.png",
+  //   techStack: ["JavaScript", "Next.js", "TailwindCSS", "Node.js"],
+  //   features: [
+  //     "Product listing",
+  //     "Shopping cart",
+  //     "Order management",
+  //     "Responsive design",
+  //   ],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
   {
     id: 4,
     slug: "gaya-company",
-    title: "Gaya Perca Company Profile",
+    title: "Gaya Perca",
     description:
       "Company profile website presenting business information, services, and products of Gaya Perca.",
     image: "/portfolio1/images/projects/gayaperca.png",
@@ -70,40 +70,40 @@ export const projects = [
       "Basic contact form",
     ],
   },
-  {
-    id: 5,
-    slug: "building-different",
-    title: "Building Different",
-    description:
-      "An online shop builder platform that enables users to create and manage e-commerce websites easily.",
-    image: "/portfolio1/images/projects/building.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    techStack: ["Next.js", "TailwindCSS", "Firebase"],
-    features: [
-      "Custom online shop creation",
-      "Product management",
-      "Order tracking",
-      "Responsive design",
-    ],
-  },
-  {
-    id: 6,
-    slug: "cryptralize",
-    title: "Cryptralize",
-    description:
-      "A decentralized exchange (DEX) for cryptocurrency trading with a focus on security and transparency.",
-    image: "/portfolio1/images/projects/cryptralize.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    techStack: ["React", "Web3.js", "Solidity", "Blockchain"],
-    features: [
-      "Swap cryptocurrencies",
-      "Wallet integration",
-      "Transaction history",
-      "Secure trading",
-    ],
-  },
+  // {
+  //   id: 5,
+  //   slug: "building-different",
+  //   title: "Building Different",
+  //   description:
+  //     "An online shop builder platform that enables users to create and manage e-commerce websites easily.",
+  //   image: "/portfolio1/images/projects/building.png",
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   techStack: ["Next.js", "TailwindCSS", "Firebase"],
+  //   features: [
+  //     "Custom online shop creation",
+  //     "Product management",
+  //     "Order tracking",
+  //     "Responsive design",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   slug: "cryptralize",
+  //   title: "Cryptralize",
+  //   description:
+  //     "A decentralized exchange (DEX) for cryptocurrency trading with a focus on security and transparency.",
+  //   image: "/portfolio1/images/projects/cryptralize.png",
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   techStack: ["React", "Web3.js", "Solidity", "Blockchain"],
+  //   features: [
+  //     "Swap cryptocurrencies",
+  //     "Wallet integration",
+  //     "Transaction history",
+  //     "Secure trading",
+  //   ],
+  // },
   {
     id: 7,
     slug: "gilang-v1",
@@ -121,27 +121,27 @@ export const projects = [
       "Contact form",
     ],
   },
-  {
-    id: 8,
-    slug: "taks-to-do",
-    title: "Taks to Do",
-    description:
-      "A simple and efficient task manager app for organizing daily activities and tracking progress.",
-    image: "/portfolio1/images/projects/tasktodo.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    techStack: ["React", "Node.js", "MongoDB"],
-    features: [
-      "Task creation & editing",
-      "Deadline reminders",
-      "Progress tracking",
-      "Responsive UI",
-    ],
-  },
+  // {
+  //   id: 8,
+  //   slug: "taks-to-do",
+  //   title: "Taks to Do",
+  //   description:
+  //     "A simple and efficient task manager app for organizing daily activities and tracking progress.",
+  //   image: "/portfolio1/images/projects/tasktodo.png",
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   techStack: ["React", "Node.js", "MongoDB"],
+  //   features: [
+  //     "Task creation & editing",
+  //     "Deadline reminders",
+  //     "Progress tracking",
+  //     "Responsive UI",
+  //   ],
+  // },
   {
     id: 9,
     slug: "anime-movie-1",
-    title: "Anime Movie Streaming",
+    title: "Ongoing Anime Streaming",
     description:
       "A web application for streaming anime movies and series online. Users can browse anime by categories, watch trailers, and enjoy smooth video playback. Built with responsive UI to provide the best viewing experience across devices.",
     image: "/portfolio1/images/projects/animemovie.png",
@@ -158,7 +158,7 @@ export const projects = [
   {
     id: 10,
     slug: "anime-movie-2",
-    title: "Anime Movie Platform",
+    title: "Ongoing Anime Movie",
     description:
       "Another anime streaming website focused on high-quality playback and user-friendly navigation. It allows users to explore anime collections, add favorites, and stream seamlessly with adaptive quality support.",
     image: "/portfolio1/images/projects/jjk.png",
@@ -172,23 +172,23 @@ export const projects = [
       "Adaptive video playback",
     ],
   },
-  {
-    id: 11,
-    slug: "dreamstay",
-    title: "DreamStay Hotel Booking",
-    description:
-      "A hotel booking website that helps users find, compare, and reserve hotels quickly and easily. The platform includes features for room availability checking, secure booking, and user reviews to improve decision making.",
-    image: "/portfolio1/images/projects/dreamstay.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    techStack: ["Next.js", "TailwindCSS", "Firebase", "Node.js"],
-    features: [
-      "Hotel search & listing",
-      "Room availability check",
-      "Online reservation system",
-      "User reviews and ratings",
-    ],
-  },
+  // {
+  //   id: 11,
+  //   slug: "dreamstay",
+  //   title: "DreamStay Hotel Booking",
+  //   description:
+  //     "A hotel booking website that helps users find, compare, and reserve hotels quickly and easily. The platform includes features for room availability checking, secure booking, and user reviews to improve decision making.",
+  //   image: "/portfolio1/images/projects/dreamstay.png",
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   techStack: ["Next.js", "TailwindCSS", "Firebase", "Node.js"],
+  //   features: [
+  //     "Hotel search & listing",
+  //     "Room availability check",
+  //     "Online reservation system",
+  //     "User reviews and ratings",
+  //   ],
+  // },
 ];
 
 export default projects;
