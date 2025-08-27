@@ -1,21 +1,45 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
 import Experience from "./Experience";
 
 const About = () => {
-  // download CV
-  const handleOpenCV = () => {
-    const cvUrl = "/docs/CV_Gilang_Ramadhan.pdf, '_blank'";
-    const link = document.createElement("a");
-    link.href = cvUrl;
-    link.download = "CV_Gilang_Ramadhan.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  // Fungsi untuk menangani download CV
+  const handleDownloadCV = async () => {
+    setIsDownloading(true);
+
+    try {
+      // Opsi 1: File CV di folder public (direkomendasikan)
+      const cvUrl = "/docs/CV_Gilang_Ramadhan.pdf";
+
+      // Opsi 2 // const cvUrl = 'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID';
+
+      // Membuat elemen anchor sementara
+      const link = document.createElement("a");
+      link.href = cvUrl;
+
+      // Memberikan nama file untuk hasil download
+      link.download = "CV_Gilang_Ramadhan.pdf";
+
+      // Simulasi klik untuk memulai download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Tambahkan timeout untuk memberikan feedback visual
+      setTimeout(() => {
+        setIsDownloading(false);
+      }, 1000);
+    } catch (error) {
+      console.error("Error downloading CV:", error);
+      setIsDownloading(false);
+      alert("Maaf, terjadi kesalahan saat mengunduh CV. Silakan coba lagi.");
+    }
   };
 
   return (
@@ -89,11 +113,12 @@ const About = () => {
                   variant="outline"
                   size="sm"
                   className="relative h-12 w-full sm:w-fit rounded-lg uppercase flex items-center gap-2 px-8 py-0 sm:py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
-                  onClick={handleOpenCV}
+                  onClick={handleDownloadCV}
+                  disabled={isDownloading}
                 >
                   <FiDownload className="text-2xl" />
                   <span className="text-md sm:text-sm md:font-lg">
-                    Download CV
+                    {isDownloading ? "Mengunduh..." : "Download CV"}
                   </span>
                 </Button>
               </div>
