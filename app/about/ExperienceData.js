@@ -61,7 +61,7 @@ export const experienceData = [
     position: "Testnet & Lightnode Operator",
     company: "WEB3 Crypto Community",
     place: "Remote",
-    period: "April 2023 - February 2024",
+    period: "April 2023 - Present",
     color: "border-accent",
     responsibilities: [
       "Ran validator and lightnode for blockchain testnet programs.",
