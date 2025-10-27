@@ -189,6 +189,74 @@ export const projects = [
   //     "User reviews and ratings",
   //   ],
   // },
+  {
+    id: 11,
+    slug: "excel-dashboard-karirnex",
+    title: "Excel Sales Dashboard – Karirnex Bootcamp",
+    description:
+      "An interactive sales dashboard project created during the Karirnex Excel Bootcamp. This project focuses on data analysis, visualization, and reporting, using dummy datasets to simulate real business insights.",
+    image: "/portfolio1/images/projects/excel_bootcamp.png",
+    demoUrl: "#",
+    githubUrl: "#",
+    techStack: [
+      "Microsoft Excel",
+      "Pivot Table",
+      "Data Visualization",
+      "Dashboard Design",
+      "Macro VBA",
+      "Data Analysis",
+    ],
+    features: [
+      "Interactive dashboard with charts and metrics",
+      "Data analysis using Pivot Table and formulas",
+      "Dynamic visualization for business insights",
+      "Simulated sales data processing and reporting",
+    ],
+  },
+  {
+    id: 12,
+    slug: "proposal-usaha-sembako",
+    title: "Business Capital Proposal – Daily Needs Store",
+    description:
+      "A business capital proposal for the establishment of a grocery and daily needs store (UD Hermansam Jaya Mart), focusing on operational planning, budget allocation, and business feasibility.",
+    image: "/portfolio1/images/projects/proposal1.png",
+    demoUrl: "#",
+    githubUrl: "#",
+    techStack: [
+      "Microsoft Word",
+      "Business Planning",
+      "Financial Projection",
+      "Document Design",
+    ],
+    features: [
+      "Structured business plan and capital proposal",
+      "Financial projection and operational budgeting",
+      "Formal layout and professional formatting",
+      "Clear business feasibility analysis",
+    ],
+  },
+  {
+    id: 13,
+    slug: "proposal-jagung",
+    title: "Agricultural Investment Proposal – Corn Cultivation",
+    description:
+      "A proposal for agricultural funding at PT Medal Holtikultura Makmur, focusing on corn cultivation planning, cost estimation, and potential yield projection.",
+    image: "/portfolio1/images/projects/proposal2.png",
+    demoUrl: "#",
+    githubUrl: "#",
+    techStack: [
+      "Microsoft Word",
+      "Agribusiness Planning",
+      "Cost Analysis",
+      "Document Presentation",
+    ],
+    features: [
+      "Detailed cultivation cost and yield projection",
+      "Professional business proposal layout",
+      "Clear and concise investment summary",
+      "Demonstrates structured documentation skills",
+    ],
+  },
 ];
 
 export default projects;
