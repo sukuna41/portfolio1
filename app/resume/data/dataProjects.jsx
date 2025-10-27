@@ -216,7 +216,7 @@ export const projects = [
   {
     id: 12,
     slug: "proposal-usaha-sembako",
-    title: "Business Capital Proposal – Daily Needs Store",
+    title: "Business Capital Proposal",
     description:
       "A business capital proposal for the establishment of a grocery and daily needs store (UD Hermansam Jaya Mart), focusing on operational planning, budget allocation, and business feasibility.",
     image: "/portfolio1/images/projects/proposal1.png",
