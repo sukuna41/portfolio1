@@ -192,10 +192,10 @@ export const projects = [
   {
     id: 11,
     slug: "excel-dashboard-karirnex",
-    title: "Excel Sales Dashboard – Karirnex Bootcamp",
+    title: "Excel Sales Dashboard",
     description:
       "An interactive sales dashboard project created during the Karirnex Excel Bootcamp. This project focuses on data analysis, visualization, and reporting, using dummy datasets to simulate real business insights.",
-    image: "/portfolio1/images/projects/excel_bootcamp.png",
+    image: "/portfolio1/images/projects/dashboard_excel.png",
     demoUrl: "#",
     githubUrl: "#",
     techStack: [
@@ -238,7 +238,7 @@ export const projects = [
   {
     id: 13,
     slug: "proposal-jagung",
-    title: "Agricultural Investment Proposal – Corn Cultivation",
+    title: "Agricultural Investment",
     description:
       "A proposal for agricultural funding at PT Medal Holtikultura Makmur, focusing on corn cultivation planning, cost estimation, and potential yield projection.",
     image: "/portfolio1/images/projects/proposal2.png",
