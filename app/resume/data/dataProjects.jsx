@@ -195,7 +195,7 @@ export const projects = [
     title: "Excel Sales Dashboard",
     description:
       "An interactive sales dashboard project created during the Karirnex Excel Bootcamp. This project focuses on data analysis, visualization, and reporting, using dummy datasets to simulate real business insights.",
-    image: "/portfolio1/images/projects/dashboard_excel.png",
+    image: "/portfolio1/images/projects/excel1.png",
     demoUrl: "#",
     githubUrl: "#",
     techStack: [
