@@ -155,23 +155,23 @@ export const projects = [
       "Responsive design",
     ],
   },
-  {
-    id: 10,
-    slug: "anime-movie-2",
-    title: "Ongoing Anime Movie",
-    description:
-      "Another anime streaming website focused on high-quality playback and user-friendly navigation. It allows users to explore anime collections, add favorites, and stream seamlessly with adaptive quality support.",
-    image: "/portfolio1/images/projects/jjk.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    techStack: ["React", "Express.js", "MongoDB"],
-    features: [
-      "User-friendly streaming",
-      "Favorites and playlists",
-      "Genre-based search",
-      "Adaptive video playback",
-    ],
-  },
+  // {
+  //   id: 10,
+  //   slug: "anime-movie-2",
+  //   title: "Ongoing Anime Movie",
+  //   description:
+  //     "Another anime streaming website focused on high-quality playback and user-friendly navigation. It allows users to explore anime collections, add favorites, and stream seamlessly with adaptive quality support.",
+  //   image: "/portfolio1/images/projects/jjk.png",
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  //   techStack: ["React", "Express.js", "MongoDB"],
+  //   features: [
+  //     "User-friendly streaming",
+  //     "Favorites and playlists",
+  //     "Genre-based search",
+  //     "Adaptive video playback",
+  //   ],
+  // },
   // {
   //   id: 11,
   //   slug: "dreamstay",
@@ -215,6 +215,34 @@ export const projects = [
   },
   {
     id: 12,
+    slug: "excel-dashboard-service-performance",
+    title: "Technical Service Dashboard",
+    description:
+      "A professional Excel dashboard project created as part of a mini project from a quiz dataset. The dashboard visualizes technician service performance across multiple cities and brands, featuring interactive filters, KPI summaries, and automated insights. Built entirely in Microsoft Excel using Pivot Tables, Slicers, Timelines, and custom design components.",
+    image: "/portfolio1/images/projects/excel2.png",
+    demoUrl: "#",
+    githubUrl: "#",
+    techStack: [
+      "Microsoft Excel",
+      "Pivot Table",
+      "Data Visualization",
+      "Dashboard Design",
+      "Power Query",
+      "Data Analysis",
+    ],
+    features: [
+      "Interactive navigation menu to switch between Dashboard, Data Source, and Pivot Table sheets",
+      "Dynamic KPI cards showing total service count, average rating, total income, and average service duration",
+      "Interconnected slicers for filtering by city, brand, technician, service type, payment method, and warranty",
+      "Pivot-based charts visualizing total income per brand, service count per city, and technician performance",
+      "Daily service trend line chart to analyze performance patterns over time",
+      "Automatic synchronization between all visual elements through Report Connections",
+      "Clean and modern dashboard layout with clear visual hierarchy and consistent color palette",
+      "Fully responsive Excel design optimized for readability and data-driven storytelling",
+    ],
+  },
+  {
+    id: 13,
     slug: "proposal-usaha-sembako",
     title: "Business Capital Proposal",
     description:
@@ -236,7 +264,7 @@ export const projects = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     slug: "proposal-jagung",
     title: "Agricultural Investment",
     description:
@@ -255,6 +283,30 @@ export const projects = [
       "Professional business proposal layout",
       "Clear and concise investment summary",
       "Demonstrates structured documentation skills",
+    ],
+  },
+  {
+    id: 15,
+    slug: "koperasi-data-management",
+    title: "Data Management and Documentation Project",
+    description:
+      "An administrative and data management project carried out during the establishment of the Koperasi Produsen Cahaya Pintu Nusantara (KPCPN) branch in Kabupaten Kuningan for the 2025–2030 period. I was responsible for creating the organizational structure, preparing official documents, and managing the cooperative’s member database digitally using Excel and Word. This project demonstrates my ability in structured data entry, document formatting, and organizational data administration.",
+    image: "/portfolio1/images/projects/data_management.png",
+    demoUrl: "#",
+    githubUrl: "#",
+    techStack: [
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Google Sheets",
+      "Data Management",
+      "Administrative Documentation",
+    ],
+    features: [
+      "Created official cooperative organizational structure for the 2025–2030 period",
+      "Input and validated member data during cooperative formation",
+      "Organized digital database of cooperative members by role and region",
+      "Designed official documents using Word and Canva with branding elements",
+      "Developed administrative record-keeping system for reporting and coordination",
     ],
   },
 ];
