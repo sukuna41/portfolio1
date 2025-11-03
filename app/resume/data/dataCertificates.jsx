@@ -16,17 +16,22 @@ export const certificates = [
   },
   {
     id: 4,
-    name: "Belajar Sketch Up",
-    image_url: "/portfolio1/images/certificates/desain3d.jpg",
+    name: "Bootcamp Excel Mini Project",
+    image_url: "/portfolio1/images/certificates/ExcelKarirnex.jpg",
   },
   {
     id: 5,
-    name: "Microsoft Office Pegawai Kantoran",
+    name: "Microsoft Office untuk Pegawai Kantoran",
     image_url: "/portfolio1/images/certificates/microsoftoffice.jpg",
   },
   {
     id: 6,
-    name: "Software Engineering Pemula",
+    name: "Desain 3D dengan SketchUp",
+    image_url: "/portfolio1/images/certificates/desain3d.jpg",
+  },
+  {
+    id: 7,
+    name: "Merancang Aplikasi untuk Junior Software Engineer",
     image_url: "/portfolio1/images/certificates/softwareengineer.jpg",
   },
 ];

@@ -6,8 +6,8 @@ import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
   "Junior Web Developer",
-  "Front End Developer",
-  "Support Administration",
+  "Admin Production",
+  "Staff Administration",
 ];
 
 const Home = () => {
