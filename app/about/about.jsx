@@ -25,7 +25,7 @@ const About = () => {
       link.href = cvUrl;
 
       // Memberikan nama file untuk hasil download
-      link.download = "CV_Gilang_Ramadhan.pdf";
+      link.download = "cv_gilang_ramadhan.pdf";
 
       // Simulasi klik untuk memulai download
       document.body.appendChild(link);
