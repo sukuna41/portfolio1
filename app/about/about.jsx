@@ -16,7 +16,7 @@ const About = () => {
 
     try {
       // Opsi 1: File CV di folder public (direkomendasikan)
-      const cvUrl = "/docs/CV_Gilang_Ramadhan.pdf";
+      const cvUrl = "/docs/cv_gilang_ramadhan.pdf";
 
       // Opsi 2 // const cvUrl = 'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID';
 

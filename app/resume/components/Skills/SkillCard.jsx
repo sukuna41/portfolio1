@@ -38,7 +38,7 @@ export default function SkillCard({ skill }) {
           {/* Image Container */}
           <div
             className={`relative w-14 h-14 lg:w-24 lg:h-24 my-4 overflow-hidden flex items-center justify-center ${
-              skill.name === "SAP" ? "scale-150" : ""
+              skill.name === "SAP" ? "scale-125" : ""
             }`}
           >
             <Image
