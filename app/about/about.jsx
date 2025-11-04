@@ -98,7 +98,7 @@ const About = () => {
 
             {/* Buttons - moved up */}
             <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-4 mt-0 sm:mt-4">
-              <div className="relative group/button">
+              {/* <div className="relative group/button">
                 <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-xl opacity-30 transition-opacity duration-500"></div>
                 <Link href="/resume">
                   <Button
@@ -109,7 +109,7 @@ const About = () => {
                     <span className="text-sm md:font-lg">Project</span>
                   </Button>
                 </Link>
-              </div>
+              </div> */}
               <div className="relative grup/button">
                 <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-xl opacity-30 transition-opacity duration-500"></div>
                 <Button

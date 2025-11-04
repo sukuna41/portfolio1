@@ -137,7 +137,7 @@ export const skills = [
     id: 22,
     name: "SAP",
     category: "administration",
-    logo: "/portfolio1/images/skills/sap.svg",
+    logo: "/portfolio1/images/skills/sap.png",
   },
   {
     id: 23,
