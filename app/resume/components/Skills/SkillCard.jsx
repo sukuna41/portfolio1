@@ -35,14 +35,18 @@ export default function SkillCard({ skill }) {
       {/* Main Card Container */}
       <div className="relative xl:py-14 h-full bg-gradient-to-tr from-accent-baja/10 via-accent-baja/10 to-accent/10 bg-background border border-accent/30 rounded-lg p-6 transition-all duration-500 group-hover:border-accent/70 group-hover:shadow-lg">
         <div className="flex flex-col items-center">
-          {/* Image Container with Scale Effect */}
-          <div className="relative w-14 h-14 lg:w-24 lg:h-24 my-4 overflow-hidden">
+          {/* Image Container */}
+          <div
+            className={`relative w-14 h-14 lg:w-24 lg:h-24 my-4 overflow-hidden flex items-center justify-center ${
+              skill.name === "SAP" ? "scale-150" : ""
+            }`}
+          >
             <Image
               src={skill.logo}
               alt={`${skill.name} logo`}
               height={200}
               width={200}
-              className="object-contain absolute transition-transform duration-500 group-hover:scale-95"
+              className="object-cover absolute transition-transform duration-500 group-hover:scale-95"
               unoptimized
               onError={() => setImgError(true)}
             />
