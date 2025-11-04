@@ -141,9 +141,9 @@ export const skills = [
   },
   {
     id: 23,
-    name: "Google Workspace",
+    name: "Archive Document",
     category: "administration",
-    logo: "/portfolio1/images/skills/workspace.png",
+    logo: "/portfolio1/images/skills/archive.png",
   },
   {
     id: 24,

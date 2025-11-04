@@ -8,8 +8,9 @@ export default function SkillsSection() {
     { id: "all", name: "All" },
     { id: "language", name: "Programing Language" },
     { id: "framework", name: "Framework" },
-    { id: "tool", name: "Development Tool" },
-    { id: "administration", name: "Support Administration" },
+    { id: "tool", name: "Development Tools" },
+    { id: "administration", name: "Administration" },
+    { id: "creative", name: "Creative Tools" },
   ];
 
   const [activeCategory, setActiveCategory] = useState("all");
