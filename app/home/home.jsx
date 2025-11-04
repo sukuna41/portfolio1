@@ -5,9 +5,9 @@ import TextRotator from "@/components/effects/TextRotator";
 import Photo from "@/components/Photo";
 
 const PROFESSION_WORDS = [
-  "Junior Web Developer",
-  "Admin Production",
   "Staff Administration",
+  "Admin Support",
+  "Junior Web Developer",
 ];
 
 const Home = () => {

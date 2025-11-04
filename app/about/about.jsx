@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
 import Experience from "./Experience";
+import Link from "next/link";
 
 const About = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -87,8 +88,8 @@ const About = () => {
             <div className="relative mt-6 group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-baja/40 to-accent/20 blur-3xl opacity-50"></div>
               <p className="hidden sm:flex p-4 text-sm sm:text-md text-center rounded-lg border border-accent/60 text-white lg:text-left md:text-lg italic">
-                {'"'}Lebih baik kecewa karena mencoba daripada kecewa karena
-                tidak mencoba{'"'}
+                {'"'}It{"'"}s better to be disappointed because you tried than
+                to be disappointed because you didn{"'"}t{'"'}
               </p>
               <p className="w-full h-12 sm:hidden p-2 text-lg rounded-lg border border-accent/60 text-white items-center text-center italic">
                 {'"'}Dream Big, Act Bold{'"'}
@@ -99,13 +100,15 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-4 mt-0 sm:mt-4">
               <div className="relative group/button">
                 <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-xl opacity-30 transition-opacity duration-500"></div>
-                <Button
-                  variant="outline"
-                  className="hidden sm:flex relative  h-10 sm:w-fit rounded-lg uppercase items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
-                >
-                  <Code className="text-md" />
-                  <span className="text-sm md:font-lg">Project</span>
-                </Button>
+                <Link href="/resume">
+                  <Button
+                    variant="outline"
+                    className="hidden sm:flex relative h-10 sm:w-fit rounded-lg uppercase items-center gap-2 px-8 py-6 bg-gradient-to-t from-accent to-accent/60 hover:bg-accent text-primary hover:scale-y-105 hover:border-primary/50 transition-all duration-300"
+                  >
+                    <Code className="text-md" />
+                    <span className="text-sm md:font-lg">Project</span>
+                  </Button>
+                </Link>
               </div>
               <div className="relative grup/button">
                 <div className="absolute -inset-0.5 bg-gradient-to-tl from-accent to-accent-baja blur-xl opacity-30 transition-opacity duration-500"></div>
