@@ -26,12 +26,12 @@ export const skills = [
   },
 
   // ===== FRAMEWORKS =====
-  {
-    id: 5,
-    name: "React",
-    category: "framework",
-    logo: "/portfolio1/images/skills/reactjs.svg",
-  },
+  // {
+  //   id: 5,
+  //   name: "React",
+  //   category: "framework",
+  //   logo: "/portfolio1/images/skills/reactjs.svg",
+  // },
   {
     id: 6,
     name: "Next.js",
